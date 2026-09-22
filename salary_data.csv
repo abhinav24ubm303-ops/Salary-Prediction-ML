@@ -1,0 +1,1001 @@
+age,experience_years,education_level,job_role,location,company_size,industry,remote_work,performance_rating,salary_lakh
+38,15.5,Diploma,Data Scientist,Bangalore,Large,IT,No,Average,45.26
+35,8.8,Bachelor's,Marketing Executive,Kolkata,Small,Finance,Yes,Good,19.92
+41,17.2,Bachelor's,Data Scientist,Mumbai,Medium,Consulting,Yes,Average,53.84
+37,13.9,Bachelor's,HR Specialist,Kolkata,Medium,Manufacturing,No,Good,36.43
+26,1.9,Bachelor's,Project Manager,Hyderabad,Medium,Manufacturing,Yes,Good,15.89
+44,19.5,High School,Senior Developer,Kolkata,Medium,Finance,Yes,Good,60.06
+41,15.2,Bachelor's,Accountant,Kolkata,Small,IT,Yes,Average,42.15
+37,15.7,Bachelor's,Marketing Executive,Kochi,Large,Healthcare,No,Good,43.77
+24,2.6,Bachelor's,Marketing Executive,Kolkata,Small,Manufacturing,No,Excellent,12.57
+36,9.0,High School,Business Analyst,Chennai,Small,Education,Yes,Good,23.29
+30,7.4,High School,Senior Developer,Kochi,Medium,Manufacturing,No,Average,17.46
+39,18.5,Bachelor's,Junior Developer,Mumbai,Large,Education,No,Average,54.07
+38,12.9,Bachelor's,Project Manager,Bangalore,Large,Education,Yes,Good,36.79
+42,16.5,Bachelor's,Data Analyst,Chennai,Large,Retail,No,Excellent,47.47
+29,8.9,Master's,Data Scientist,Kochi,Medium,Consulting,Yes,Good,27.51
+29,4.5,Bachelor's,Senior Developer,Kochi,Medium,Education,Yes,Average,14.91
+37,11.1,Bachelor's,Data Analyst,Chennai,Medium,Retail,No,Good,28.4
+26,1.3,Bachelor's,Data Analyst,Chennai,Large,Consulting,No,Average,10.48
+42,16.6,High School,Data Analyst,Chennai,Medium,Healthcare,Yes,Good,43.72
+33,12.6,Bachelor's,Marketing Executive,Kochi,Medium,Manufacturing,No,Excellent,34.91
+40,15.2,Bachelor's,Project Manager,Kochi,Medium,Education,No,Good,42.97
+30,7.1,Bachelor's,Data Scientist,Bangalore,Medium,Consulting,Yes,Average,22.29
+42,19.4,High School,Software Engineer,Chennai,Small,Education,No,Good,57.49
+44,17.9,Master's,Project Manager,Hyderabad,Medium,Retail,No,Average,56.62
+43,15.6,Master's,Software Engineer,Kochi,Medium,Healthcare,Yes,Average,43.35
+32,3.9,High School,Data Analyst,Chennai,Large,Retail,No,Good,9.81
+37,9.3,Bachelor's,Data Scientist,Kolkata,Medium,Healthcare,Yes,Good,26.56
+25,0.9,Master's,Software Engineer,Hyderabad,Large,Retail,Yes,Good,12.51
+28,3.1,Bachelor's,Data Analyst,Pune,Medium,Manufacturing,No,Excellent,11.83
+40,13.7,Master's,Senior Developer,Bangalore,Large,Education,No,Average,41.35
+39,14.9,Bachelor's,Accountant,Kolkata,Small,Education,No,Excellent,40.15
+44,19.4,Master's,Accountant,Mumbai,Large,Healthcare,No,Good,60.13
+33,6.5,PhD,Junior Developer,Hyderabad,Medium,Manufacturing,No,Good,19.76
+31,7.4,High School,HR Specialist,Kochi,Medium,Retail,Yes,Excellent,17.51
+32,9.4,Bachelor's,HR Specialist,Kolkata,Small,Education,No,Average,20.66
+27,3.8,Bachelor's,Data Analyst,Hyderabad,Medium,IT,No,Good,12.36
+28,2.6,Diploma,Data Scientist,Hyderabad,Medium,IT,No,Good,14.85
+34,9.5,Bachelor's,Marketing Executive,Bangalore,Large,IT,No,Good,25.55
+29,4.5,PhD,Data Analyst,Kolkata,Large,Manufacturing,Yes,Excellent,18.54
+39,13.4,High School,Junior Developer,Bangalore,Medium,Manufacturing,Yes,Average,32.64
+32,8.7,Bachelor's,Data Analyst,Bangalore,Medium,IT,Yes,Excellent,24.98
+43,16.7,Master's,Senior Developer,Hyderabad,Medium,IT,Yes,Average,52.46
+39,14.0,Bachelor's,Data Analyst,Bangalore,Large,Manufacturing,No,Average,39.18
+27,6.2,Bachelor's,Senior Developer,Mumbai,Large,Education,No,Good,21.6
+44,16.6,PhD,Software Engineer,Pune,Medium,Healthcare,Yes,Excellent,51.97
+39,16.1,Bachelor's,Business Analyst,Pune,Large,Retail,Yes,Average,44.43
+28,7.7,Diploma,Software Engineer,Delhi,Medium,Finance,No,Excellent,19.18
+27,5.8,High School,Marketing Executive,Kochi,Large,Finance,Yes,Average,13.79
+35,13.6,Master's,Marketing Executive,Chennai,Large,Healthcare,No,Good,37.26
+27,2.8,Bachelor's,HR Specialist,Mumbai,Large,Consulting,Yes,Good,11.53
+27,4.0,Bachelor's,Business Analyst,Pune,Small,Manufacturing,Yes,Average,9.85
+23,0.1,High School,Junior Developer,Chennai,Medium,Finance,Yes,Excellent,6.25
+41,15.7,Bachelor's,Data Analyst,Kochi,Small,Education,No,Good,42.15
+38,13.3,Master's,Software Engineer,Mumbai,Large,Consulting,Yes,Good,38.25
+39,14.1,Bachelor's,Project Manager,Mumbai,Medium,Consulting,No,Good,39.49
+41,15.6,PhD,HR Specialist,Delhi,Medium,Manufacturing,Yes,Good,45.97
+35,9.2,Bachelor's,Accountant,Delhi,Large,IT,Yes,Good,24.12
+30,11.4,Bachelor's,Data Analyst,Kolkata,Small,Finance,No,Excellent,30.61
+26,2.8,Master's,Senior Developer,Pune,Medium,Finance,Yes,Good,15.41
+21,2.3,Bachelor's,Business Analyst,Chennai,Medium,Finance,Yes,Good,12.46
+37,13.4,Bachelor's,HR Specialist,Chennai,Medium,Finance,No,Good,35.21
+33,9.4,Master's,Marketing Executive,Kolkata,Small,Healthcare,No,Good,21.96
+38,11.3,Bachelor's,Data Scientist,Hyderabad,Small,Education,Yes,Good,31.51
+42,15.3,Bachelor's,Data Scientist,Mumbai,Medium,Healthcare,Yes,Good,44.57
+37,12.7,PhD,Data Analyst,Mumbai,Medium,Healthcare,No,Good,36.15
+34,11.1,Diploma,Marketing Executive,Delhi,Medium,Finance,No,Good,26.44
+36,11.2,Bachelor's,Senior Developer,Pune,Small,Finance,No,Excellent,32.08
+29,6.1,High School,Business Analyst,Hyderabad,Medium,Consulting,No,Excellent,15.28
+25,0.6,Bachelor's,Software Engineer,Hyderabad,Medium,Retail,No,Excellent,10.64
+35,8.7,Diploma,Data Scientist,Hyderabad,Medium,Finance,Yes,Good,25.21
+27,4.3,Master's,Data Analyst,Kolkata,Large,Manufacturing,Yes,Good,16.83
+34,8.2,Diploma,HR Specialist,Kolkata,Medium,Manufacturing,No,Average,17.14
+43,17.1,Master's,HR Specialist,Mumbai,Medium,Consulting,No,Good,50.58
+26,4.7,Bachelor's,Business Analyst,Bangalore,Large,Finance,No,Good,16.68
+28,1.2,Bachelor's,Marketing Executive,Mumbai,Medium,Retail,No,Average,10.88
+31,5.6,Bachelor's,Senior Developer,Kochi,Medium,Consulting,Yes,Excellent,17.4
+30,5.9,Master's,Senior Developer,Hyderabad,Small,Manufacturing,No,Excellent,19.42
+35,13.2,Bachelor's,Accountant,Kochi,Small,Finance,No,Good,36.77
+33,11.1,Bachelor's,Data Scientist,Pune,Small,Consulting,No,Good,30.31
+38,15.7,Master's,Junior Developer,Chennai,Large,Healthcare,No,Good,42.68
+39,13.3,Bachelor's,Accountant,Delhi,Large,Education,No,Good,35.53
+30,8.1,Diploma,HR Specialist,Delhi,Small,Education,Yes,Excellent,16.8
+41,16.3,Master's,Junior Developer,Mumbai,Small,Manufacturing,No,Excellent,47.55
+24,3.3,Bachelor's,Marketing Executive,Chennai,Medium,IT,No,Good,12.71
+24,0.5,High School,HR Specialist,Delhi,Medium,Education,No,Average,5.36
+26,1.8,Bachelor's,HR Specialist,Delhi,Medium,Manufacturing,Yes,Good,9.83
+45,14.4,Diploma,Accountant,Bangalore,Medium,Education,No,Average,38.7
+30,9.2,Diploma,Data Scientist,Kochi,Large,Finance,No,Good,23.74
+31,3.2,Master's,Data Scientist,Kolkata,Medium,IT,No,Average,13.32
+34,10.0,Diploma,HR Specialist,Hyderabad,Medium,Education,Yes,Average,23.03
+28,3.0,Master's,Software Engineer,Chennai,Medium,Retail,No,Good,12.05
+38,13.9,Master's,Software Engineer,Kolkata,Medium,Education,No,Average,36.8
+34,8.9,Bachelor's,Accountant,Chennai,Large,Consulting,No,Good,21.79
+31,7.6,Master's,Senior Developer,Chennai,Small,Retail,No,Average,21.77
+34,6.0,Master's,Project Manager,Hyderabad,Large,Education,Yes,Excellent,22.12
+35,12.6,PhD,Senior Developer,Chennai,Large,IT,No,Average,38.53
+34,7.2,Bachelor's,Senior Developer,Chennai,Large,Education,No,Average,21.4
+24,1.8,Diploma,Project Manager,Pune,Medium,Finance,No,Average,10.64
+26,2.4,Bachelor's,Accountant,Chennai,Medium,Manufacturing,Yes,Good,9.3
+41,19.2,Bachelor's,Data Scientist,Chennai,Large,Finance,No,Good,62.74
+43,18.2,Diploma,Software Engineer,Bangalore,Large,Consulting,Yes,Good,54.56
+42,14.0,Bachelor's,Senior Developer,Kolkata,Medium,Healthcare,No,Average,38.5
+29,5.3,High School,Software Engineer,Kolkata,Large,Education,No,Excellent,16.71
+43,19.4,Master's,Accountant,Mumbai,Medium,Finance,Yes,Average,59.18
+37,15.6,Bachelor's,Data Analyst,Delhi,Medium,Finance,No,Good,45.2
+38,14.3,High School,Data Analyst,Kolkata,Large,Consulting,No,Excellent,40.68
+29,9.0,High School,Junior Developer,Delhi,Medium,Finance,No,Average,20.45
+27,5.4,Bachelor's,Data Scientist,Kochi,Medium,Education,Yes,Good,16.95
+26,1.9,Bachelor's,Business Analyst,Kochi,Large,Consulting,No,Excellent,10.07
+45,18.1,High School,Data Scientist,Kochi,Large,Retail,Yes,Good,57.02
+40,9.1,Bachelor's,HR Specialist,Bangalore,Large,IT,No,Average,23.53
+27,4.0,Diploma,Software Engineer,Hyderabad,Medium,Healthcare,No,Good,11.31
+34,6.1,Bachelor's,Software Engineer,Chennai,Large,Healthcare,Yes,Average,18.19
+36,11.6,Bachelor's,Marketing Executive,Kochi,Small,Finance,No,Excellent,28.46
+27,3.5,Bachelor's,Junior Developer,Mumbai,Medium,Finance,No,Good,11.39
+42,17.1,Bachelor's,Data Scientist,Delhi,Medium,Education,No,Good,53.09
+39,15.2,High School,Data Analyst,Mumbai,Large,Healthcare,Yes,Average,39.85
+39,14.4,High School,Junior Developer,Kochi,Large,Healthcare,Yes,Good,37.16
+32,8.6,Diploma,Project Manager,Kolkata,Large,Healthcare,No,Good,24.79
+33,12.5,Master's,Business Analyst,Mumbai,Medium,Healthcare,Yes,Average,34.5
+32,11.7,PhD,Junior Developer,Mumbai,Medium,Finance,No,Excellent,34.89
+39,13.0,Master's,Accountant,Delhi,Medium,Education,Yes,Good,37.21
+25,1.7,Bachelor's,Project Manager,Kolkata,Medium,Consulting,Yes,Good,12.2
+31,8.3,Bachelor's,Marketing Executive,Hyderabad,Small,Education,No,Good,17.38
+25,0.8,Bachelor's,Junior Developer,Delhi,Medium,Retail,Yes,Average,6.66
+36,9.9,Master's,Accountant,Delhi,Large,Consulting,No,Good,28.35
+31,6.6,Master's,Junior Developer,Chennai,Large,Retail,Yes,Good,17.19
+25,2.9,Master's,Business Analyst,Hyderabad,Large,Finance,No,Good,14.13
+29,2.1,Master's,HR Specialist,Mumbai,Medium,Healthcare,Yes,Average,11.71
+40,11.8,Bachelor's,Data Analyst,Kochi,Medium,Education,No,Excellent,32.96
+29,3.4,Master's,Junior Developer,Hyderabad,Small,Education,No,Average,10.18
+45,18.5,Master's,HR Specialist,Delhi,Medium,Finance,Yes,Good,55.68
+39,11.6,Bachelor's,Junior Developer,Pune,Medium,IT,No,Good,28.83
+34,6.9,Master's,HR Specialist,Pune,Medium,Healthcare,Yes,Average,18.67
+37,11.8,High School,Marketing Executive,Mumbai,Small,Consulting,No,Average,27.21
+26,0.5,PhD,Senior Developer,Bangalore,Medium,Manufacturing,Yes,Average,15.61
+44,19.2,Master's,Senior Developer,Bangalore,Medium,Manufacturing,No,Excellent,63.09
+31,9.6,High School,Senior Developer,Kochi,Medium,Finance,Yes,Good,25.3
+41,15.7,Bachelor's,Senior Developer,Pune,Small,Healthcare,No,Good,45.99
+22,1.7,High School,Software Engineer,Kochi,Medium,Retail,No,Excellent,9.01
+32,9.7,Master's,Senior Developer,Pune,Medium,Education,No,Good,29.42
+37,9.8,Master's,HR Specialist,Hyderabad,Medium,Healthcare,Yes,Good,26.25
+45,18.8,Bachelor's,Data Analyst,Chennai,Medium,Healthcare,Yes,Good,57.61
+39,11.4,Master's,Marketing Executive,Pune,Small,IT,Yes,Good,30.04
+33,9.5,High School,Accountant,Hyderabad,Large,Consulting,No,Good,23.95
+26,5.3,Bachelor's,Marketing Executive,Kolkata,Small,Consulting,No,Excellent,14.1
+30,6.6,Bachelor's,Project Manager,Kolkata,Medium,IT,Yes,Good,18.69
+35,10.4,High School,Data Analyst,Kochi,Small,Healthcare,No,Good,25.15
+33,8.8,Bachelor's,Business Analyst,Kolkata,Medium,Education,Yes,Good,23.53
+27,0.4,Bachelor's,Senior Developer,Hyderabad,Medium,Manufacturing,Yes,Excellent,12.05
+40,16.5,Bachelor's,Data Scientist,Bangalore,Large,Consulting,No,Average,50.87
+43,17.9,Bachelor's,Data Scientist,Hyderabad,Medium,Healthcare,Yes,Excellent,54.33
+24,2.8,Master's,Marketing Executive,Pune,Medium,Manufacturing,Yes,Good,12.12
+36,11.1,Bachelor's,Project Manager,Kochi,Small,Consulting,No,Good,30.29
+26,2.2,Master's,Marketing Executive,Hyderabad,Small,Manufacturing,Yes,Excellent,12.46
+36,13.4,Bachelor's,Business Analyst,Delhi,Medium,Healthcare,No,Good,36.41
+29,5.6,Bachelor's,Data Analyst,Hyderabad,Medium,Manufacturing,No,Average,11.16
+37,13.2,Bachelor's,Accountant,Kochi,Medium,Healthcare,No,Excellent,34.93
+38,14.5,Bachelor's,Software Engineer,Bangalore,Large,IT,No,Good,41.56
+44,15.4,Bachelor's,Business Analyst,Delhi,Large,Manufacturing,No,Good,44.88
+26,2.2,Bachelor's,Software Engineer,Mumbai,Large,Manufacturing,Yes,Good,13.77
+42,18.3,Diploma,Accountant,Kochi,Medium,Healthcare,No,Good,52.33
+23,4.6,Bachelor's,Data Analyst,Hyderabad,Large,Education,No,Good,14.91
+22,0.7,Bachelor's,Business Analyst,Bangalore,Medium,Healthcare,No,Average,8.11
+34,11.1,Bachelor's,Software Engineer,Delhi,Medium,IT,Yes,Good,28.69
+30,7.4,Master's,Data Scientist,Bangalore,Large,Consulting,No,Excellent,24.97
+44,16.6,Bachelor's,Business Analyst,Hyderabad,Medium,IT,No,Average,44.63
+40,16.2,PhD,Junior Developer,Kolkata,Large,Education,Yes,Good,46.77
+34,6.3,Master's,Senior Developer,Chennai,Large,IT,No,Good,23.47
+43,19.1,PhD,Junior Developer,Kochi,Small,Retail,Yes,Excellent,59.17
+30,5.8,Master's,Data Analyst,Pune,Medium,Consulting,Yes,Good,17.9
+34,10.3,Diploma,Data Analyst,Kolkata,Medium,Retail,No,Excellent,25.39
+29,5.1,Bachelor's,HR Specialist,Delhi,Large,Retail,No,Average,12.37
+47,18.7,Diploma,Senior Developer,Kolkata,Large,Manufacturing,Yes,Good,59.55
+22,3.3,Master's,Software Engineer,Mumbai,Small,Consulting,Yes,Excellent,12.03
+21,0.9,Bachelor's,Software Engineer,Hyderabad,Small,Consulting,Yes,Excellent,9.7
+31,8.7,Bachelor's,Business Analyst,Pune,Small,Finance,No,Good,21.76
+44,19.8,Master's,Business Analyst,Delhi,Medium,Education,No,Good,63.25
+44,17.8,High School,Senior Developer,Delhi,Small,Manufacturing,No,Good,51.68
+40,15.0,Bachelor's,Software Engineer,Mumbai,Large,Healthcare,Yes,Average,39.74
+41,17.8,Master's,Junior Developer,Bangalore,Medium,Retail,No,Excellent,53.49
+44,17.9,High School,Business Analyst,Chennai,Large,IT,No,Excellent,52.78
+37,10.4,Bachelor's,Marketing Executive,Kolkata,Medium,Consulting,No,Good,24.85
+31,6.3,Master's,Marketing Executive,Mumbai,Medium,Retail,Yes,Good,19.93
+42,15.4,High School,Senior Developer,Hyderabad,Small,Manufacturing,Yes,Good,41.77
+38,13.2,Bachelor's,HR Specialist,Kolkata,Large,Manufacturing,No,Average,34.37
+30,7.5,Bachelor's,Junior Developer,Kochi,Small,Finance,No,Good,17.29
+28,1.9,Bachelor's,HR Specialist,Bangalore,Small,Education,Yes,Good,11.45
+39,14.9,High School,Project Manager,Chennai,Small,Consulting,No,Average,39.23
+29,5.2,Master's,Data Analyst,Mumbai,Large,Finance,Yes,Good,19.03
+46,18.7,Master's,Marketing Executive,Mumbai,Small,Manufacturing,Yes,Excellent,58.02
+23,4.8,Diploma,HR Specialist,Mumbai,Medium,Healthcare,No,Average,12.85
+23,2.5,Bachelor's,Data Scientist,Chennai,Large,Retail,No,Good,13.25
+38,16.6,Bachelor's,Software Engineer,Mumbai,Large,Education,Yes,Good,45.88
+26,3.1,Master's,Junior Developer,Delhi,Small,Retail,No,Average,11.03
+27,3.6,Bachelor's,Business Analyst,Mumbai,Small,Manufacturing,No,Good,13.25
+32,12.0,Diploma,Senior Developer,Delhi,Medium,Healthcare,Yes,Good,33.67
+39,17.5,High School,Data Analyst,Pune,Small,Finance,No,Average,46.97
+26,3.9,PhD,HR Specialist,Hyderabad,Medium,Healthcare,No,Average,15.84
+36,6.2,Bachelor's,Senior Developer,Delhi,Medium,Retail,No,Excellent,20.12
+44,15.5,Master's,Data Analyst,Chennai,Medium,Manufacturing,No,Good,44.71
+42,19.4,Bachelor's,Marketing Executive,Chennai,Small,Manufacturing,No,Good,58.66
+33,10.0,Master's,Project Manager,Bangalore,Medium,Healthcare,Yes,Good,31.86
+24,2.9,High School,HR Specialist,Kolkata,Small,Consulting,Yes,Excellent,9.55
+21,0.3,High School,Junior Developer,Kolkata,Medium,IT,No,Good,5.42
+28,4.6,Master's,Data Scientist,Chennai,Small,IT,No,Excellent,16.81
+24,2.6,Master's,Data Scientist,Chennai,Large,IT,Yes,Good,18.63
+37,13.6,Bachelor's,HR Specialist,Pune,Medium,Consulting,Yes,Good,36.54
+22,2.4,Bachelor's,Software Engineer,Hyderabad,Small,Finance,No,Good,10.88
+32,10.1,Bachelor's,Software Engineer,Delhi,Small,Retail,Yes,Good,29.11
+38,13.9,Bachelor's,Marketing Executive,Delhi,Medium,Manufacturing,Yes,Good,37.85
+37,11.6,Diploma,HR Specialist,Mumbai,Small,Manufacturing,No,Average,25.53
+29,4.0,Master's,Accountant,Kochi,Small,Consulting,No,Good,12.66
+37,16.1,Bachelor's,Senior Developer,Delhi,Large,IT,No,Good,47.82
+40,14.3,Master's,Business Analyst,Delhi,Medium,Healthcare,No,Average,39.17
+37,14.8,High School,Senior Developer,Kolkata,Small,Education,Yes,Good,40.04
+28,2.6,High School,HR Specialist,Chennai,Medium,Retail,No,Good,8.46
+26,2.5,Bachelor's,Software Engineer,Chennai,Medium,Retail,Yes,Good,9.68
+39,18.6,Bachelor's,Business Analyst,Mumbai,Large,Education,Yes,Excellent,61.0
+31,8.0,Bachelor's,Data Analyst,Delhi,Small,Healthcare,No,Good,20.26
+31,6.0,High School,Accountant,Pune,Large,IT,No,Excellent,16.63
+35,9.8,Master's,Data Analyst,Hyderabad,Large,Education,No,Good,28.18
+37,13.3,Master's,Marketing Executive,Mumbai,Small,Finance,Yes,Average,35.8
+47,19.1,Master's,Data Scientist,Kochi,Small,Education,No,Excellent,62.33
+32,5.7,Diploma,Junior Developer,Hyderabad,Medium,Manufacturing,No,Average,13.78
+42,18.5,Bachelor's,Software Engineer,Pune,Large,Education,No,Good,56.31
+26,0.5,Bachelor's,HR Specialist,Delhi,Medium,Retail,No,Good,9.75
+40,11.1,Bachelor's,Software Engineer,Chennai,Medium,IT,Yes,Good,29.54
+42,12.7,Bachelor's,Senior Developer,Kochi,Large,Retail,No,Good,36.48
+23,2.1,High School,Project Manager,Kolkata,Large,Education,No,Good,11.54
+24,2.8,Bachelor's,Senior Developer,Mumbai,Medium,IT,No,Average,15.34
+36,8.4,Bachelor's,Software Engineer,Pune,Medium,Finance,No,Average,19.84
+41,19.3,Bachelor's,HR Specialist,Kolkata,Large,Manufacturing,No,Average,58.26
+33,11.9,Diploma,HR Specialist,Pune,Medium,Consulting,Yes,Average,29.09
+41,18.7,Bachelor's,Marketing Executive,Mumbai,Large,Education,Yes,Good,56.79
+41,16.1,Bachelor's,Business Analyst,Mumbai,Small,Consulting,No,Good,44.52
+33,9.3,Bachelor's,Software Engineer,Mumbai,Small,Finance,No,Good,22.87
+38,15.7,Bachelor's,Data Scientist,Bangalore,Large,Healthcare,No,Good,47.96
+23,0.4,Bachelor's,Senior Developer,Kochi,Medium,Consulting,Yes,Average,8.73
+24,2.2,Master's,Business Analyst,Kolkata,Small,Finance,Yes,Good,10.93
+38,16.6,Bachelor's,Project Manager,Chennai,Small,Retail,No,Good,48.67
+46,15.9,Bachelor's,Junior Developer,Chennai,Medium,Finance,No,Excellent,46.14
+29,4.7,PhD,HR Specialist,Kochi,Large,Healthcare,Yes,Good,17.63
+37,10.6,Bachelor's,Junior Developer,Hyderabad,Small,Education,No,Average,21.21
+35,12.1,Master's,Senior Developer,Hyderabad,Small,Healthcare,Yes,Good,35.58
+41,17.4,Master's,Marketing Executive,Chennai,Medium,Consulting,No,Excellent,51.92
+34,12.1,High School,Project Manager,Delhi,Large,Consulting,Yes,Good,33.95
+26,8.3,Bachelor's,Marketing Executive,Bangalore,Medium,Education,Yes,Average,20.97
+28,7.5,Master's,Project Manager,Chennai,Large,Education,Yes,Average,22.67
+28,8.5,PhD,Accountant,Kochi,Large,IT,No,Good,24.33
+31,13.0,Bachelor's,Project Manager,Bangalore,Medium,Finance,No,Excellent,38.22
+38,17.3,High School,Junior Developer,Mumbai,Large,IT,No,Good,50.69
+36,9.1,Bachelor's,Junior Developer,Delhi,Medium,Manufacturing,No,Good,22.27
+29,5.0,Diploma,Marketing Executive,Kochi,Medium,Finance,Yes,Good,14.45
+32,4.7,Master's,Junior Developer,Chennai,Medium,Healthcare,Yes,Excellent,16.99
+40,14.9,Bachelor's,Data Analyst,Chennai,Large,Manufacturing,No,Good,42.49
+42,16.3,Master's,Junior Developer,Pune,Large,Retail,Yes,Excellent,46.72
+24,2.1,Master's,Data Analyst,Delhi,Large,Retail,No,Good,14.55
+27,1.3,Bachelor's,Project Manager,Pune,Large,IT,No,Good,12.36
+38,11.9,Bachelor's,Software Engineer,Bangalore,Medium,Education,No,Good,32.45
+25,2.9,Master's,Data Scientist,Bangalore,Large,Education,Yes,Good,16.86
+42,16.5,Master's,Business Analyst,Kochi,Large,Healthcare,No,Excellent,48.93
+32,6.2,Master's,Junior Developer,Pune,Small,Manufacturing,Yes,Good,18.95
+26,2.9,High School,Junior Developer,Mumbai,Small,Consulting,Yes,Good,7.98
+40,18.4,Bachelor's,Senior Developer,Hyderabad,Medium,Finance,No,Good,58.69
+24,3.3,Diploma,Accountant,Bangalore,Large,Healthcare,No,Good,12.88
+30,5.7,Master's,Data Scientist,Pune,Medium,Healthcare,No,Good,19.65
+28,3.1,Bachelor's,HR Specialist,Kochi,Large,Manufacturing,Yes,Good,12.12
+24,2.3,Bachelor's,Junior Developer,Delhi,Small,IT,No,Good,7.76
+24,0.4,Diploma,Marketing Executive,Delhi,Medium,Consulting,No,Good,8.06
+27,1.1,Bachelor's,Junior Developer,Mumbai,Medium,Manufacturing,No,Good,7.94
+29,3.5,Master's,Marketing Executive,Hyderabad,Small,Education,No,Average,11.23
+29,1.1,Diploma,Software Engineer,Delhi,Large,Retail,Yes,Good,11.35
+39,11.8,High School,Accountant,Mumbai,Small,Consulting,No,Good,28.8
+35,13.6,Master's,Senior Developer,Hyderabad,Large,Manufacturing,No,Good,39.36
+36,7.9,Master's,Software Engineer,Kochi,Small,Finance,No,Good,21.3
+29,6.4,Diploma,Data Analyst,Kochi,Large,IT,No,Good,16.65
+37,10.1,Bachelor's,Junior Developer,Delhi,Medium,Retail,No,Excellent,25.42
+42,17.5,PhD,Software Engineer,Kolkata,Small,Finance,No,Good,53.1
+40,17.0,Master's,Project Manager,Mumbai,Small,IT,No,Good,51.65
+21,0.9,Bachelor's,Data Analyst,Kolkata,Small,Consulting,Yes,Good,7.27
+27,3.6,Bachelor's,Data Analyst,Delhi,Medium,Education,Yes,Good,15.25
+25,4.7,Bachelor's,Accountant,Chennai,Large,Retail,No,Good,14.84
+31,5.0,High School,Software Engineer,Mumbai,Medium,Finance,No,Good,13.55
+39,11.4,Master's,Data Analyst,Kochi,Medium,IT,No,Good,29.62
+30,8.3,High School,Software Engineer,Delhi,Medium,IT,No,Average,20.3
+26,1.0,High School,Data Scientist,Kochi,Medium,Healthcare,No,Good,10.02
+30,7.5,Master's,Data Analyst,Bangalore,Medium,IT,Yes,Average,18.95
+33,10.5,Master's,Junior Developer,Chennai,Medium,Healthcare,Yes,Good,26.44
+28,2.0,Master's,Junior Developer,Mumbai,Large,Healthcare,No,Good,13.99
+41,16.7,Bachelor's,Accountant,Kolkata,Large,Education,No,Good,49.04
+29,1.0,Bachelor's,Junior Developer,Hyderabad,Medium,Retail,No,Good,8.44
+41,18.5,Bachelor's,Marketing Executive,Pune,Small,Healthcare,No,Excellent,56.9
+28,2.0,Bachelor's,Business Analyst,Kolkata,Small,Education,No,Good,10.8
+41,16.9,Bachelor's,Data Scientist,Chennai,Medium,IT,No,Good,51.03
+44,18.1,Bachelor's,Data Analyst,Bangalore,Medium,Healthcare,No,Excellent,55.23
+42,19.6,Bachelor's,Marketing Executive,Mumbai,Large,Consulting,Yes,Good,61.95
+40,16.0,Master's,Business Analyst,Mumbai,Medium,Consulting,No,Good,46.2
+39,15.6,PhD,Software Engineer,Kolkata,Medium,Education,No,Average,44.48
+35,12.8,High School,Business Analyst,Kolkata,Large,Consulting,Yes,Good,33.87
+41,15.6,Bachelor's,Business Analyst,Hyderabad,Medium,Education,No,Good,41.95
+28,2.7,Diploma,Software Engineer,Kolkata,Large,IT,No,Average,9.76
+36,10.7,Bachelor's,Junior Developer,Mumbai,Small,Consulting,No,Good,25.64
+38,10.3,Bachelor's,Marketing Executive,Pune,Medium,Healthcare,No,Average,26.14
+45,17.2,Diploma,Junior Developer,Hyderabad,Large,Retail,Yes,Good,46.85
+32,9.3,Master's,HR Specialist,Mumbai,Large,Retail,Yes,Average,24.74
+33,7.7,Bachelor's,Junior Developer,Delhi,Large,Healthcare,Yes,Average,18.76
+35,12.8,Master's,HR Specialist,Hyderabad,Medium,Manufacturing,Yes,Excellent,37.16
+29,5.3,High School,Senior Developer,Delhi,Large,Education,No,Good,17.3
+25,2.8,High School,Junior Developer,Mumbai,Medium,Healthcare,No,Excellent,12.86
+38,9.6,Bachelor's,Junior Developer,Delhi,Medium,Healthcare,No,Good,24.35
+33,8.3,High School,Software Engineer,Mumbai,Small,Manufacturing,Yes,Average,18.19
+28,4.7,Bachelor's,Project Manager,Kolkata,Small,Finance,Yes,Good,15.55
+34,7.4,PhD,Junior Developer,Hyderabad,Medium,IT,Yes,Good,20.66
+26,7.3,Diploma,Accountant,Bangalore,Small,Consulting,No,Average,17.81
+25,6.5,Diploma,HR Specialist,Chennai,Large,Healthcare,Yes,Excellent,16.65
+34,7.6,Bachelor's,Senior Developer,Kolkata,Large,Retail,No,Good,21.73
+38,13.7,Bachelor's,Business Analyst,Delhi,Large,Manufacturing,No,Good,38.82
+31,5.9,Bachelor's,HR Specialist,Kochi,Small,Manufacturing,No,Good,15.89
+40,19.0,Bachelor's,HR Specialist,Chennai,Large,Retail,Yes,Good,55.41
+42,18.3,Master's,Software Engineer,Pune,Small,Retail,Yes,Good,56.73
+39,9.6,Diploma,Marketing Executive,Delhi,Medium,Manufacturing,No,Excellent,24.29
+33,6.6,Bachelor's,Project Manager,Bangalore,Large,Consulting,No,Good,19.09
+35,10.7,Master's,Business Analyst,Delhi,Small,IT,Yes,Average,24.2
+40,17.0,Master's,Data Scientist,Kolkata,Small,Manufacturing,No,Average,49.11
+36,13.1,Bachelor's,HR Specialist,Kochi,Small,Finance,No,Good,32.75
+35,16.1,Bachelor's,Data Analyst,Kochi,Medium,Consulting,No,Excellent,45.91
+35,10.7,High School,Junior Developer,Kolkata,Large,IT,Yes,Excellent,27.66
+39,12.7,Diploma,Software Engineer,Delhi,Small,Finance,Yes,Good,31.32
+26,5.8,High School,Accountant,Delhi,Small,Finance,Yes,Excellent,13.9
+37,14.7,Master's,Marketing Executive,Kolkata,Medium,Retail,Yes,Good,40.47
+25,4.0,Bachelor's,Data Analyst,Chennai,Small,IT,No,Good,12.24
+35,13.9,Master's,HR Specialist,Delhi,Large,IT,No,Good,39.53
+41,17.2,High School,Junior Developer,Delhi,Large,Education,No,Average,46.42
+21,2.6,Master's,Junior Developer,Kolkata,Large,Consulting,No,Average,12.25
+38,12.3,Master's,Project Manager,Bangalore,Large,Education,Yes,Good,36.68
+28,1.9,High School,HR Specialist,Bangalore,Medium,Education,Yes,Average,7.55
+38,14.5,High School,Business Analyst,Pune,Large,Retail,No,Excellent,39.9
+21,1.7,High School,Marketing Executive,Bangalore,Small,Education,No,Excellent,10.98
+40,18.7,Master's,Senior Developer,Mumbai,Small,Healthcare,No,Good,59.36
+30,2.7,Diploma,Accountant,Kolkata,Medium,Retail,Yes,Good,9.25
+36,19.2,Bachelor's,Data Scientist,Hyderabad,Small,IT,Yes,Good,61.96
+39,16.0,Bachelor's,Accountant,Pune,Large,Finance,Yes,Average,47.57
+33,11.9,Master's,Software Engineer,Hyderabad,Medium,Retail,No,Good,32.45
+42,15.7,Bachelor's,Junior Developer,Bangalore,Large,Healthcare,No,Average,45.03
+38,15.9,Bachelor's,Junior Developer,Mumbai,Medium,IT,No,Good,45.26
+44,18.9,PhD,Business Analyst,Kochi,Medium,IT,No,Average,57.68
+31,5.1,Diploma,Junior Developer,Bangalore,Large,Consulting,Yes,Average,13.95
+40,11.8,Master's,Business Analyst,Chennai,Small,Healthcare,No,Average,28.85
+25,1.9,High School,Marketing Executive,Delhi,Medium,IT,Yes,Excellent,10.15
+37,12.3,Bachelor's,Software Engineer,Delhi,Medium,Manufacturing,No,Average,30.47
+24,3.4,Master's,Accountant,Kolkata,Large,Education,No,Good,13.48
+38,11.3,Bachelor's,Software Engineer,Chennai,Large,Education,No,Good,29.01
+33,11.4,Master's,Software Engineer,Chennai,Small,Consulting,Yes,Good,29.66
+32,9.3,Bachelor's,Project Manager,Delhi,Medium,Healthcare,No,Good,26.43
+34,10.5,Bachelor's,Senior Developer,Hyderabad,Medium,Retail,No,Average,28.21
+35,15.3,Bachelor's,Senior Developer,Pune,Small,Manufacturing,Yes,Good,42.02
+41,16.0,Bachelor's,Software Engineer,Bangalore,Medium,Retail,Yes,Good,45.1
+36,9.8,Bachelor's,HR Specialist,Mumbai,Medium,Finance,No,Good,23.05
+37,12.0,Bachelor's,Junior Developer,Chennai,Small,Retail,Yes,Good,29.79
+39,18.6,Bachelor's,Senior Developer,Chennai,Medium,Manufacturing,Yes,Good,58.89
+26,2.4,Bachelor's,Project Manager,Bangalore,Small,IT,Yes,Good,13.64
+28,2.3,Bachelor's,Data Scientist,Kochi,Medium,Finance,Yes,Average,11.78
+21,1.8,Diploma,HR Specialist,Chennai,Small,Retail,No,Good,8.29
+35,13.2,Master's,Senior Developer,Mumbai,Large,IT,No,Average,38.64
+35,8.4,Bachelor's,HR Specialist,Kochi,Small,Consulting,Yes,Good,18.55
+40,15.5,Diploma,Marketing Executive,Kolkata,Large,IT,No,Good,43.19
+38,13.4,Master's,Data Analyst,Hyderabad,Small,Consulting,Yes,Average,36.45
+35,6.7,Master's,Senior Developer,Delhi,Medium,Retail,Yes,Average,22.18
+43,18.0,Diploma,Project Manager,Delhi,Medium,Education,Yes,Good,53.77
+41,15.3,Diploma,Project Manager,Chennai,Small,Finance,No,Good,43.77
+36,5.4,High School,Junior Developer,Bangalore,Medium,Healthcare,No,Excellent,14.23
+31,7.3,High School,Project Manager,Hyderabad,Large,Manufacturing,No,Excellent,22.56
+28,6.3,Master's,Software Engineer,Bangalore,Large,Manufacturing,Yes,Excellent,20.95
+28,3.2,PhD,Project Manager,Bangalore,Medium,Finance,Yes,Good,17.34
+28,3.0,High School,Business Analyst,Hyderabad,Small,Education,Yes,Good,7.44
+41,18.7,Master's,Project Manager,Pune,Large,Consulting,No,Good,59.96
+30,8.8,High School,Marketing Executive,Kolkata,Medium,Finance,Yes,Good,20.57
+37,7.7,Bachelor's,Data Analyst,Bangalore,Small,Retail,No,Good,19.34
+39,14.6,Master's,Business Analyst,Mumbai,Large,Finance,No,Good,45.11
+33,11.1,Bachelor's,Accountant,Hyderabad,Medium,Manufacturing,No,Average,25.94
+45,18.7,High School,Business Analyst,Chennai,Medium,Finance,No,Average,53.25
+39,15.6,Bachelor's,Marketing Executive,Kolkata,Medium,Healthcare,Yes,Average,40.89
+33,9.6,PhD,HR Specialist,Pune,Medium,Education,No,Average,24.68
+33,7.5,Bachelor's,Project Manager,Chennai,Small,Healthcare,Yes,Excellent,23.24
+40,19.7,Diploma,Business Analyst,Bangalore,Large,Finance,No,Average,62.59
+39,14.4,Diploma,Accountant,Bangalore,Small,Retail,No,Good,36.96
+48,19.0,Bachelor's,Data Scientist,Mumbai,Large,IT,Yes,Excellent,62.48
+28,2.4,Bachelor's,Junior Developer,Pune,Large,Consulting,No,Good,9.65
+40,17.0,Master's,Junior Developer,Delhi,Large,IT,Yes,Good,52.22
+35,12.7,Master's,Senior Developer,Mumbai,Small,Healthcare,Yes,Good,38.43
+25,2.4,Master's,Junior Developer,Pune,Medium,Consulting,No,Good,11.21
+35,11.8,Master's,Senior Developer,Kochi,Medium,Finance,No,Good,32.12
+37,13.7,Bachelor's,Software Engineer,Hyderabad,Medium,IT,No,Excellent,36.31
+26,0.2,Bachelor's,Business Analyst,Kolkata,Large,Manufacturing,No,Good,10.34
+29,9.1,Bachelor's,Junior Developer,Pune,Medium,IT,No,Excellent,23.96
+43,16.5,Bachelor's,HR Specialist,Pune,Large,Consulting,Yes,Excellent,46.37
+29,5.9,Master's,Data Analyst,Kochi,Small,Education,Yes,Good,16.13
+34,9.2,Master's,Software Engineer,Mumbai,Medium,Consulting,No,Good,27.09
+30,8.8,PhD,Marketing Executive,Kochi,Small,Finance,Yes,Good,23.3
+33,6.0,Bachelor's,Business Analyst,Kolkata,Large,IT,No,Good,19.29
+46,18.4,Bachelor's,Marketing Executive,Kolkata,Small,Consulting,Yes,Good,54.29
+42,15.6,Bachelor's,Business Analyst,Chennai,Medium,Manufacturing,Yes,Good,42.77
+22,2.2,High School,Project Manager,Kochi,Large,Consulting,No,Excellent,12.66
+46,19.9,Diploma,HR Specialist,Kolkata,Medium,Healthcare,No,Good,59.38
+43,17.6,Bachelor's,Software Engineer,Kochi,Small,Healthcare,No,Good,48.87
+26,5.7,High School,Accountant,Kolkata,Small,Retail,No,Good,11.79
+41,16.7,Master's,Marketing Executive,Kochi,Medium,Education,Yes,Good,50.25
+27,2.1,Diploma,Senior Developer,Hyderabad,Medium,Finance,No,Good,11.13
+45,20.0,Diploma,Data Analyst,Pune,Small,Healthcare,Yes,Good,61.69
+38,13.3,Master's,HR Specialist,Hyderabad,Medium,Retail,No,Good,35.61
+38,13.0,High School,Junior Developer,Kochi,Small,IT,Yes,Good,30.72
+29,1.8,Master's,Accountant,Kochi,Medium,Healthcare,No,Good,11.67
+45,17.9,Master's,Senior Developer,Kolkata,Medium,Healthcare,Yes,Average,54.56
+21,0.6,High School,Junior Developer,Chennai,Small,IT,No,Good,6.61
+28,4.8,Master's,Data Analyst,Hyderabad,Small,IT,No,Excellent,13.67
+26,2.9,Bachelor's,Accountant,Mumbai,Small,Education,No,Good,11.65
+35,15.5,Master's,Senior Developer,Pune,Small,IT,Yes,Excellent,44.54
+28,4.0,Master's,Project Manager,Chennai,Medium,Healthcare,No,Average,15.03
+45,18.2,Master's,Accountant,Chennai,Large,Education,Yes,Good,57.18
+34,13.1,Bachelor's,Junior Developer,Pune,Large,Consulting,Yes,Good,35.62
+26,0.7,Bachelor's,Marketing Executive,Kochi,Medium,IT,Yes,Good,7.35
+22,0.1,Master's,Senior Developer,Mumbai,Medium,Education,Yes,Good,12.16
+23,1.0,PhD,HR Specialist,Hyderabad,Medium,IT,No,Good,10.92
+40,12.1,Bachelor's,Software Engineer,Pune,Large,Education,Yes,Excellent,34.13
+39,16.0,Bachelor's,Software Engineer,Kochi,Small,Education,Yes,Good,41.46
+30,4.8,Bachelor's,Marketing Executive,Kochi,Medium,Manufacturing,No,Average,12.51
+36,17.0,Master's,Accountant,Kochi,Medium,Education,No,Good,49.82
+30,1.1,PhD,Business Analyst,Kochi,Small,Consulting,No,Good,11.1
+42,16.0,Diploma,HR Specialist,Kolkata,Medium,IT,No,Good,43.63
+42,18.6,Diploma,Data Scientist,Chennai,Large,IT,Yes,Good,59.05
+41,15.4,Bachelor's,Software Engineer,Mumbai,Large,IT,No,Good,43.48
+34,14.0,Bachelor's,Senior Developer,Chennai,Small,Healthcare,Yes,Good,37.18
+44,16.8,Bachelor's,HR Specialist,Pune,Medium,Finance,Yes,Good,48.0
+24,0.8,High School,Data Analyst,Bangalore,Medium,IT,Yes,Good,7.94
+27,4.0,Bachelor's,Data Scientist,Kochi,Medium,Finance,No,Good,14.91
+25,2.5,Bachelor's,Software Engineer,Chennai,Medium,Consulting,Yes,Good,11.92
+33,10.1,Bachelor's,Data Scientist,Kolkata,Small,Manufacturing,No,Excellent,30.37
+41,14.9,Bachelor's,Senior Developer,Mumbai,Large,IT,Yes,Good,45.04
+37,12.6,Master's,Software Engineer,Kolkata,Large,Consulting,No,Excellent,36.73
+43,17.0,Bachelor's,Software Engineer,Hyderabad,Medium,Finance,No,Average,46.22
+27,3.1,Master's,Project Manager,Chennai,Medium,Healthcare,Yes,Good,15.67
+40,14.7,Bachelor's,Data Analyst,Pune,Medium,Healthcare,No,Good,39.99
+27,3.9,Bachelor's,Junior Developer,Chennai,Medium,Healthcare,No,Good,13.33
+35,5.4,Bachelor's,Project Manager,Kolkata,Small,Manufacturing,No,Good,15.48
+34,14.2,High School,Software Engineer,Mumbai,Medium,Retail,Yes,Good,37.3
+47,19.6,Bachelor's,Junior Developer,Pune,Small,Retail,No,Good,59.53
+40,12.2,Bachelor's,Software Engineer,Kolkata,Large,Retail,Yes,Excellent,33.7
+23,1.1,Master's,Data Scientist,Mumbai,Medium,Manufacturing,Yes,Good,13.51
+42,12.3,Master's,Business Analyst,Delhi,Medium,Finance,Yes,Average,36.39
+27,0.8,High School,Senior Developer,Hyderabad,Medium,Healthcare,No,Good,9.29
+44,17.7,Bachelor's,Senior Developer,Pune,Large,IT,Yes,Good,55.46
+38,14.2,Diploma,Senior Developer,Kolkata,Small,Retail,No,Average,38.01
+27,3.5,Master's,Data Analyst,Kochi,Small,Education,Yes,Good,13.02
+25,1.8,Master's,Marketing Executive,Kochi,Small,Retail,No,Good,9.87
+29,3.7,Bachelor's,Data Analyst,Hyderabad,Medium,Education,Yes,Average,11.85
+47,19.6,Bachelor's,HR Specialist,Pune,Large,Finance,No,Good,60.27
+34,9.2,Bachelor's,Accountant,Mumbai,Small,IT,No,Good,21.5
+37,15.7,Bachelor's,Business Analyst,Hyderabad,Large,Consulting,Yes,Good,48.23
+39,12.7,Master's,Project Manager,Mumbai,Medium,Healthcare,Yes,Good,37.12
+38,11.4,Master's,Marketing Executive,Bangalore,Medium,IT,No,Average,30.82
+29,2.9,Bachelor's,Business Analyst,Kochi,Small,Healthcare,No,Excellent,11.62
+45,18.9,Bachelor's,Marketing Executive,Kochi,Medium,Consulting,No,Good,55.68
+29,6.0,High School,Senior Developer,Chennai,Medium,Finance,Yes,Average,16.05
+33,11.6,Diploma,Software Engineer,Bangalore,Medium,Consulting,No,Excellent,29.04
+36,14.0,Diploma,Software Engineer,Bangalore,Small,Education,Yes,Average,35.71
+33,13.0,Bachelor's,Accountant,Bangalore,Large,Consulting,Yes,Good,35.66
+43,18.8,Master's,Project Manager,Pune,Large,Retail,No,Good,62.17
+27,3.0,Bachelor's,Senior Developer,Mumbai,Medium,IT,No,Excellent,14.51
+33,10.2,Diploma,Data Analyst,Delhi,Medium,Education,No,Excellent,25.64
+25,8.1,High School,Senior Developer,Kochi,Large,Healthcare,No,Good,21.15
+30,9.5,Bachelor's,Accountant,Kolkata,Small,Finance,Yes,Good,24.73
+29,2.4,Master's,HR Specialist,Kochi,Large,Education,No,Good,11.29
+25,2.7,Bachelor's,Accountant,Delhi,Medium,IT,Yes,Good,12.36
+31,5.6,Master's,Data Analyst,Chennai,Large,Retail,Yes,Good,19.34
+27,6.1,Master's,Data Scientist,Mumbai,Small,Manufacturing,Yes,Average,19.71
+36,8.6,High School,Software Engineer,Kochi,Medium,IT,No,Average,17.23
+36,12.2,Bachelor's,Business Analyst,Bangalore,Medium,Education,No,Average,30.38
+37,12.7,PhD,Project Manager,Pune,Medium,Retail,Yes,Average,38.12
+38,8.2,Bachelor's,Project Manager,Chennai,Large,IT,No,Good,22.34
+36,8.2,High School,Data Scientist,Kochi,Large,Healthcare,No,Excellent,24.62
+28,4.4,Master's,Senior Developer,Hyderabad,Small,Finance,No,Good,16.93
+34,11.8,Master's,Business Analyst,Mumbai,Medium,IT,No,Good,33.25
+29,6.3,Bachelor's,Data Scientist,Kochi,Medium,Manufacturing,Yes,Excellent,21.53
+26,0.7,Bachelor's,HR Specialist,Pune,Medium,Education,No,Good,7.78
+32,8.4,Diploma,Junior Developer,Hyderabad,Medium,Manufacturing,No,Good,18.35
+33,9.5,Master's,Senior Developer,Delhi,Large,Retail,No,Excellent,31.16
+32,4.5,Bachelor's,Accountant,Delhi,Large,Consulting,No,Good,14.09
+35,11.4,High School,Junior Developer,Hyderabad,Small,Consulting,No,Good,22.81
+41,11.3,Master's,Software Engineer,Delhi,Medium,Retail,Yes,Excellent,32.79
+38,14.0,PhD,Accountant,Delhi,Medium,Healthcare,No,Good,38.86
+41,13.0,Master's,Data Analyst,Delhi,Medium,Healthcare,Yes,Good,36.61
+38,13.0,Bachelor's,Senior Developer,Bangalore,Small,Manufacturing,Yes,Excellent,39.92
+33,6.3,High School,Project Manager,Kolkata,Medium,Healthcare,No,Good,17.08
+38,15.7,Master's,Software Engineer,Mumbai,Medium,Education,No,Excellent,47.95
+33,11.0,Master's,Junior Developer,Mumbai,Small,Finance,No,Average,27.33
+34,8.6,Bachelor's,Junior Developer,Mumbai,Large,Consulting,No,Average,23.29
+39,12.5,Bachelor's,Junior Developer,Kolkata,Medium,Retail,No,Good,29.98
+31,7.2,Bachelor's,Software Engineer,Hyderabad,Medium,Healthcare,No,Average,17.85
+31,10.3,Bachelor's,HR Specialist,Delhi,Medium,Retail,No,Excellent,27.91
+35,14.7,High School,Senior Developer,Hyderabad,Large,Healthcare,Yes,Average,41.24
+38,17.7,High School,Junior Developer,Bangalore,Small,Finance,No,Good,50.62
+38,18.4,Diploma,Junior Developer,Delhi,Small,Consulting,Yes,Average,50.9
+34,10.1,Master's,Data Scientist,Mumbai,Medium,Consulting,Yes,Excellent,34.45
+37,10.4,Diploma,Accountant,Kochi,Medium,Manufacturing,Yes,Good,27.62
+40,16.0,Diploma,Data Analyst,Bangalore,Medium,Healthcare,No,Average,44.04
+25,6.3,Bachelor's,Junior Developer,Hyderabad,Large,Finance,No,Average,16.73
+40,16.7,Diploma,Senior Developer,Kochi,Small,IT,No,Good,49.27
+33,9.9,Diploma,Data Scientist,Kochi,Small,Manufacturing,No,Excellent,25.61
+32,2.3,Bachelor's,Software Engineer,Chennai,Medium,Healthcare,No,Excellent,10.45
+22,1.4,Bachelor's,Business Analyst,Mumbai,Large,Consulting,Yes,Good,13.81
+40,16.8,Bachelor's,Marketing Executive,Delhi,Large,Consulting,No,Good,49.27
+29,1.1,Master's,Data Analyst,Mumbai,Large,IT,No,Average,11.26
+31,5.6,Diploma,Business Analyst,Pune,Medium,Consulting,No,Good,15.19
+32,6.7,Master's,Data Analyst,Delhi,Large,IT,Yes,Good,17.68
+28,3.5,Master's,Software Engineer,Pune,Medium,Education,Yes,Good,13.77
+31,6.3,Master's,Business Analyst,Pune,Small,Education,No,Good,17.06
+41,14.9,Bachelor's,Business Analyst,Kolkata,Medium,Consulting,Yes,Excellent,43.49
+22,0.3,Bachelor's,Data Analyst,Delhi,Large,Retail,Yes,Average,10.8
+43,16.5,Bachelor's,Project Manager,Kolkata,Medium,Consulting,No,Average,48.14
+38,17.1,Master's,Software Engineer,Hyderabad,Medium,Retail,Yes,Average,50.43
+32,7.4,High School,HR Specialist,Pune,Medium,Manufacturing,Yes,Average,14.69
+28,3.1,PhD,HR Specialist,Pune,Medium,Manufacturing,No,Average,13.58
+34,12.0,Bachelor's,Marketing Executive,Kochi,Small,Consulting,No,Good,30.26
+26,2.4,Master's,Project Manager,Hyderabad,Medium,Healthcare,No,Average,14.93
+30,7.3,Bachelor's,Marketing Executive,Kochi,Large,Healthcare,Yes,Good,22.02
+41,19.2,High School,Project Manager,Delhi,Small,Consulting,Yes,Excellent,57.61
+43,19.9,Bachelor's,Accountant,Hyderabad,Medium,Manufacturing,No,Excellent,62.07
+37,15.4,Bachelor's,Software Engineer,Hyderabad,Small,Consulting,No,Good,41.04
+31,6.2,Bachelor's,Data Scientist,Pune,Small,Retail,Yes,Average,18.48
+35,13.8,Bachelor's,Data Scientist,Chennai,Large,Consulting,No,Average,39.83
+40,14.1,Bachelor's,Project Manager,Bangalore,Medium,Manufacturing,No,Average,39.47
+29,7.8,Bachelor's,Software Engineer,Kochi,Medium,Manufacturing,No,Excellent,21.99
+35,12.8,Bachelor's,Data Analyst,Kochi,Medium,Finance,Yes,Excellent,33.28
+23,0.2,PhD,Business Analyst,Bangalore,Large,Education,Yes,Good,12.88
+32,4.2,Diploma,Software Engineer,Kolkata,Medium,Manufacturing,Yes,Good,11.06
+35,10.5,Bachelor's,HR Specialist,Pune,Large,Manufacturing,Yes,Good,27.12
+27,3.3,Bachelor's,HR Specialist,Bangalore,Medium,Consulting,No,Good,10.96
+29,3.3,Bachelor's,Data Scientist,Hyderabad,Small,Healthcare,No,Excellent,15.58
+35,16.7,Bachelor's,Junior Developer,Kochi,Medium,Healthcare,No,Average,44.95
+44,19.8,Bachelor's,Junior Developer,Delhi,Small,Consulting,No,Good,58.43
+40,11.1,PhD,Senior Developer,Kolkata,Medium,Consulting,Yes,Good,34.38
+41,16.8,Bachelor's,Software Engineer,Hyderabad,Medium,Finance,Yes,Average,47.37
+44,19.8,Master's,Junior Developer,Mumbai,Large,Healthcare,Yes,Good,64.35
+28,2.8,High School,Software Engineer,Delhi,Large,Consulting,Yes,Excellent,12.47
+35,9.0,Bachelor's,Software Engineer,Chennai,Large,Finance,No,Average,22.72
+27,7.9,Bachelor's,Accountant,Pune,Small,Manufacturing,No,Good,18.6
+21,1.6,High School,HR Specialist,Kolkata,Large,IT,No,Good,8.79
+40,15.1,Bachelor's,Junior Developer,Mumbai,Large,Finance,No,Average,41.87
+31,8.7,Master's,HR Specialist,Kolkata,Small,Manufacturing,Yes,Average,20.53
+37,9.4,Master's,Software Engineer,Chennai,Medium,Retail,Yes,Good,25.97
+26,3.0,Bachelor's,Data Scientist,Mumbai,Large,Education,Yes,Average,14.57
+23,3.6,Bachelor's,Junior Developer,Kolkata,Small,Manufacturing,Yes,Good,11.55
+39,18.1,Bachelor's,Junior Developer,Delhi,Medium,Healthcare,No,Excellent,53.13
+21,0.9,High School,Software Engineer,Chennai,Large,Education,No,Good,9.99
+28,4.7,High School,Data Scientist,Pune,Small,Retail,Yes,Excellent,16.44
+29,5.8,Bachelor's,Data Scientist,Bangalore,Medium,Manufacturing,Yes,Good,21.96
+33,9.8,PhD,Data Analyst,Mumbai,Medium,Healthcare,Yes,Good,26.79
+38,11.7,High School,HR Specialist,Pune,Medium,Retail,No,Good,26.42
+37,9.9,Bachelor's,Marketing Executive,Delhi,Large,Education,Yes,Average,24.6
+25,1.7,Master's,Marketing Executive,Bangalore,Small,Education,Yes,Good,9.93
+24,4.9,Master's,Project Manager,Bangalore,Medium,Consulting,Yes,Good,17.23
+42,16.9,Bachelor's,Project Manager,Kochi,Large,Healthcare,No,Good,51.69
+38,12.8,Bachelor's,Data Scientist,Mumbai,Small,Retail,No,Good,36.3
+38,13.0,Master's,Senior Developer,Bangalore,Large,Consulting,No,Average,38.27
+40,13.4,Master's,Data Scientist,Chennai,Small,Manufacturing,Yes,Excellent,40.0
+36,15.3,Diploma,Junior Developer,Bangalore,Medium,Consulting,Yes,Average,39.64
+30,1.2,Master's,Business Analyst,Pune,Small,Retail,No,Excellent,14.0
+29,7.3,High School,Data Analyst,Chennai,Medium,Finance,Yes,Excellent,17.99
+37,10.8,Master's,Marketing Executive,Pune,Large,Consulting,Yes,Excellent,29.5
+27,6.8,High School,Business Analyst,Hyderabad,Large,Retail,No,Good,19.0
+39,16.9,Diploma,Data Scientist,Kochi,Large,Finance,Yes,Average,49.99
+37,9.7,High School,Accountant,Pune,Medium,Healthcare,Yes,Good,25.66
+39,15.4,Bachelor's,Data Scientist,Hyderabad,Large,Finance,No,Good,46.09
+43,17.0,Bachelor's,Software Engineer,Bangalore,Medium,Manufacturing,No,Good,50.67
+35,10.1,Diploma,Junior Developer,Delhi,Large,IT,Yes,Good,26.46
+42,18.2,Bachelor's,Software Engineer,Mumbai,Medium,Manufacturing,Yes,Average,53.03
+39,11.7,Bachelor's,Business Analyst,Bangalore,Large,Education,No,Good,31.6
+40,17.0,Master's,Data Scientist,Delhi,Small,IT,Yes,Good,53.74
+26,6.8,Master's,Data Analyst,Mumbai,Medium,Retail,Yes,Good,20.73
+32,10.0,Bachelor's,Data Scientist,Bangalore,Large,Manufacturing,No,Excellent,29.71
+36,10.6,Diploma,Senior Developer,Delhi,Small,Manufacturing,No,Good,26.57
+27,2.1,Bachelor's,Accountant,Chennai,Small,Education,No,Good,6.56
+28,8.0,Master's,Business Analyst,Mumbai,Large,Healthcare,Yes,Good,24.81
+40,18.3,High School,Junior Developer,Delhi,Medium,Finance,Yes,Good,51.97
+35,12.6,Bachelor's,Marketing Executive,Bangalore,Small,IT,No,Good,32.47
+27,3.6,Master's,Data Analyst,Bangalore,Medium,Healthcare,No,Average,11.61
+27,6.8,PhD,Junior Developer,Mumbai,Medium,Retail,Yes,Average,17.93
+26,3.8,Bachelor's,Business Analyst,Hyderabad,Medium,IT,No,Good,12.84
+23,0.5,Bachelor's,Junior Developer,Pune,Large,Consulting,Yes,Good,8.74
+44,18.5,Bachelor's,Senior Developer,Kochi,Large,Retail,No,Good,58.29
+35,9.0,Master's,Junior Developer,Pune,Medium,Healthcare,No,Average,22.85
+30,6.2,High School,Data Scientist,Chennai,Medium,Consulting,No,Good,20.9
+35,12.0,Diploma,Project Manager,Kolkata,Medium,Finance,No,Average,30.68
+24,0.1,Bachelor's,Data Analyst,Delhi,Large,Consulting,No,Good,11.5
+28,5.6,Diploma,Junior Developer,Kochi,Small,Finance,Yes,Good,11.68
+35,14.1,Bachelor's,Software Engineer,Kolkata,Small,Healthcare,Yes,Good,35.04
+34,12.7,Bachelor's,Business Analyst,Chennai,Large,Healthcare,No,Average,33.26
+42,19.6,Master's,Accountant,Kochi,Large,Consulting,Yes,Excellent,61.24
+33,12.4,Master's,Business Analyst,Mumbai,Medium,Finance,Yes,Good,34.95
+34,9.6,Bachelor's,Project Manager,Kolkata,Medium,Consulting,Yes,Good,25.32
+41,15.2,Master's,Project Manager,Chennai,Medium,Healthcare,No,Good,42.74
+38,18.1,Bachelor's,Marketing Executive,Mumbai,Medium,Finance,Yes,Excellent,57.21
+38,14.4,Bachelor's,HR Specialist,Bangalore,Medium,Retail,No,Excellent,39.85
+43,19.3,Diploma,Data Scientist,Pune,Small,Retail,Yes,Good,58.23
+40,15.6,Master's,Senior Developer,Hyderabad,Medium,Healthcare,Yes,Good,48.65
+41,17.3,Master's,Data Scientist,Delhi,Medium,IT,No,Average,52.7
+23,2.3,Master's,Junior Developer,Hyderabad,Medium,Healthcare,Yes,Good,12.93
+35,14.6,Master's,Software Engineer,Kolkata,Small,Education,Yes,Good,39.23
+33,8.8,PhD,Marketing Executive,Hyderabad,Large,IT,Yes,Average,24.31
+38,11.1,Diploma,Accountant,Bangalore,Medium,IT,No,Excellent,29.65
+32,13.1,Master's,Software Engineer,Delhi,Large,Consulting,Yes,Excellent,39.29
+44,19.4,Bachelor's,Junior Developer,Mumbai,Small,IT,Yes,Good,59.07
+47,19.7,Bachelor's,Junior Developer,Pune,Medium,Healthcare,Yes,Excellent,60.91
+29,5.8,Bachelor's,Marketing Executive,Kochi,Large,Manufacturing,Yes,Good,17.17
+40,14.7,Bachelor's,Data Analyst,Kochi,Medium,Healthcare,Yes,Good,40.76
+37,15.0,Bachelor's,Data Analyst,Pune,Small,Education,No,Excellent,41.79
+31,6.9,Bachelor's,Junior Developer,Kochi,Medium,IT,Yes,Good,16.77
+22,2.5,High School,Business Analyst,Hyderabad,Medium,Manufacturing,Yes,Good,8.82
+21,0.8,Bachelor's,Data Scientist,Pune,Medium,Retail,No,Good,13.2
+42,15.5,Master's,Marketing Executive,Bangalore,Medium,Manufacturing,No,Average,43.85
+31,9.8,Bachelor's,Marketing Executive,Chennai,Medium,Consulting,Yes,Good,24.28
+43,19.7,Bachelor's,Software Engineer,Chennai,Medium,Healthcare,Yes,Good,62.25
+30,9.3,Bachelor's,Accountant,Bangalore,Small,IT,Yes,Good,21.98
+40,19.6,Bachelor's,Project Manager,Chennai,Medium,Healthcare,No,Average,62.93
+32,8.2,Diploma,HR Specialist,Pune,Medium,Finance,Yes,Average,18.73
+38,15.9,Master's,Senior Developer,Delhi,Small,Education,Yes,Good,48.4
+27,1.7,Diploma,Accountant,Chennai,Small,Finance,No,Average,6.72
+36,11.1,Master's,Business Analyst,Delhi,Small,Consulting,Yes,Good,27.94
+41,16.0,Master's,Data Scientist,Delhi,Small,Retail,Yes,Good,48.73
+43,18.5,Bachelor's,Junior Developer,Mumbai,Medium,Finance,Yes,Good,55.35
+44,16.5,Master's,Accountant,Delhi,Small,Consulting,No,Average,47.16
+22,0.7,Bachelor's,Accountant,Kochi,Medium,Manufacturing,No,Excellent,9.67
+31,7.5,Master's,Project Manager,Kolkata,Large,Education,No,Good,20.67
+28,1.0,Master's,Project Manager,Pune,Large,Finance,No,Good,12.1
+29,2.2,Master's,Senior Developer,Chennai,Small,Healthcare,Yes,Good,16.48
+34,13.5,Bachelor's,Junior Developer,Chennai,Medium,Retail,No,Good,33.49
+38,14.3,Master's,Business Analyst,Hyderabad,Medium,Manufacturing,No,Good,42.26
+43,15.5,PhD,Data Scientist,Hyderabad,Large,Finance,No,Good,48.48
+43,17.3,Bachelor's,Senior Developer,Chennai,Large,Manufacturing,No,Good,53.26
+39,14.8,Master's,HR Specialist,Kochi,Small,Finance,Yes,Excellent,42.17
+39,16.0,Master's,Junior Developer,Hyderabad,Small,Finance,Yes,Good,43.82
+24,1.0,Bachelor's,Junior Developer,Chennai,Medium,Education,No,Excellent,11.66
+29,4.7,Master's,Senior Developer,Hyderabad,Large,Finance,Yes,Good,19.45
+36,12.4,Bachelor's,Data Scientist,Delhi,Large,Healthcare,No,Excellent,38.29
+41,17.2,Bachelor's,Data Analyst,Delhi,Small,Healthcare,Yes,Excellent,50.24
+24,0.1,High School,Software Engineer,Bangalore,Medium,Finance,Yes,Average,8.36
+33,10.3,Diploma,Data Analyst,Hyderabad,Small,Manufacturing,No,Average,25.4
+39,13.5,Master's,Data Analyst,Pune,Medium,Healthcare,No,Good,37.04
+32,0.6,Bachelor's,Project Manager,Pune,Large,Retail,No,Good,14.4
+28,8.0,Bachelor's,Project Manager,Kolkata,Medium,Manufacturing,Yes,Good,21.67
+43,17.9,Bachelor's,Accountant,Bangalore,Small,Retail,No,Good,53.29
+35,13.4,Bachelor's,Accountant,Kochi,Medium,Finance,No,Excellent,36.65
+30,4.8,Master's,Senior Developer,Kochi,Medium,Manufacturing,No,Good,16.34
+41,17.1,Master's,Business Analyst,Hyderabad,Large,Finance,No,Good,52.41
+33,7.0,High School,Project Manager,Delhi,Medium,Finance,No,Average,18.06
+44,17.1,Bachelor's,Software Engineer,Delhi,Large,Consulting,Yes,Good,49.73
+30,6.0,Bachelor's,Data Analyst,Pune,Medium,Healthcare,No,Average,15.83
+39,11.8,Bachelor's,Marketing Executive,Kochi,Small,Retail,No,Good,29.07
+26,7.9,Bachelor's,Accountant,Pune,Medium,IT,No,Good,19.99
+33,5.5,Bachelor's,Data Analyst,Chennai,Small,Retail,Yes,Good,14.82
+43,17.7,Bachelor's,Software Engineer,Pune,Medium,Consulting,No,Good,51.63
+30,3.8,Bachelor's,Software Engineer,Bangalore,Medium,Retail,No,Good,13.17
+23,1.7,Bachelor's,Software Engineer,Chennai,Small,Retail,No,Average,8.56
+29,6.8,Bachelor's,HR Specialist,Bangalore,Small,Manufacturing,No,Average,15.67
+39,14.4,Master's,Project Manager,Kolkata,Small,Healthcare,Yes,Excellent,45.78
+40,16.1,Master's,Data Scientist,Kolkata,Small,Healthcare,Yes,Excellent,48.19
+45,20.0,Bachelor's,HR Specialist,Chennai,Large,IT,No,Good,61.6
+33,5.9,Master's,Accountant,Delhi,Large,Retail,Yes,Good,18.21
+28,8.2,Master's,Marketing Executive,Pune,Small,Manufacturing,No,Good,23.6
+29,2.7,Diploma,Software Engineer,Pune,Large,Manufacturing,No,Good,9.8
+36,11.5,Bachelor's,Project Manager,Pune,Large,Manufacturing,No,Good,33.11
+43,20.0,Bachelor's,Accountant,Chennai,Large,IT,Yes,Average,62.2
+34,14.0,Master's,Marketing Executive,Mumbai,Medium,Retail,No,Good,39.5
+37,11.9,Diploma,Data Analyst,Bangalore,Medium,Manufacturing,No,Good,32.08
+26,7.8,Master's,Data Analyst,Delhi,Medium,Finance,Yes,Good,23.31
+44,18.3,Bachelor's,Accountant,Chennai,Large,Education,No,Average,53.44
+30,9.9,Bachelor's,Junior Developer,Hyderabad,Large,Consulting,No,Good,25.47
+27,2.7,Master's,Project Manager,Chennai,Medium,Healthcare,No,Good,12.35
+31,7.3,Bachelor's,Software Engineer,Delhi,Small,Manufacturing,Yes,Good,18.79
+28,1.3,Master's,Accountant,Kolkata,Large,Education,Yes,Good,10.96
+28,4.0,PhD,Junior Developer,Delhi,Large,Retail,No,Good,15.58
+23,0.4,Master's,Junior Developer,Kochi,Medium,Retail,Yes,Good,7.25
+32,9.1,Diploma,Data Analyst,Hyderabad,Medium,Retail,Yes,Excellent,24.18
+40,12.7,Master's,Senior Developer,Hyderabad,Medium,Manufacturing,No,Average,34.15
+32,6.9,High School,Data Scientist,Chennai,Medium,Consulting,Yes,Excellent,21.22
+31,8.4,Bachelor's,Senior Developer,Delhi,Medium,Healthcare,No,Good,22.64
+43,19.2,Master's,Data Analyst,Mumbai,Large,Consulting,No,Good,60.02
+35,15.0,Master's,Project Manager,Hyderabad,Large,Retail,No,Good,46.94
+36,10.8,Bachelor's,Project Manager,Kochi,Medium,Retail,No,Good,29.79
+25,5.7,Bachelor's,Business Analyst,Mumbai,Medium,Healthcare,No,Average,17.23
+44,17.9,Master's,Data Scientist,Hyderabad,Medium,Healthcare,Yes,Excellent,60.35
+29,4.7,Master's,Project Manager,Pune,Small,Retail,Yes,Good,16.04
+36,6.5,Bachelor's,HR Specialist,Pune,Medium,Healthcare,No,Good,18.65
+39,18.2,Master's,Software Engineer,Hyderabad,Small,Healthcare,Yes,Good,53.0
+34,10.6,Diploma,HR Specialist,Bangalore,Medium,Manufacturing,Yes,Average,26.52
+43,14.8,Diploma,Accountant,Bangalore,Small,Healthcare,Yes,Average,37.93
+39,11.8,Bachelor's,Data Analyst,Hyderabad,Medium,Retail,No,Good,29.48
+35,13.1,PhD,Software Engineer,Kochi,Large,IT,Yes,Good,38.61
+31,6.0,Bachelor's,Data Analyst,Bangalore,Small,IT,No,Good,17.53
+29,4.8,Bachelor's,Senior Developer,Kolkata,Medium,Manufacturing,Yes,Good,17.82
+31,6.4,Diploma,Project Manager,Pune,Large,IT,No,Good,19.41
+25,3.1,Master's,Accountant,Bangalore,Medium,Manufacturing,Yes,Excellent,15.43
+41,17.5,Diploma,Project Manager,Delhi,Small,Consulting,Yes,Average,51.23
+26,5.7,Bachelor's,Software Engineer,Mumbai,Medium,Education,No,Good,16.72
+36,11.2,PhD,Data Analyst,Kolkata,Medium,Consulting,No,Good,31.47
+41,15.8,High School,HR Specialist,Chennai,Medium,Healthcare,Yes,Good,42.58
+39,15.7,Bachelor's,Data Analyst,Delhi,Small,Consulting,No,Average,43.17
+29,8.8,Bachelor's,Project Manager,Delhi,Medium,Finance,No,Average,21.61
+36,9.5,Master's,HR Specialist,Chennai,Medium,Healthcare,Yes,Average,23.94
+45,19.9,Bachelor's,Data Analyst,Bangalore,Medium,Healthcare,No,Good,60.58
+36,13.5,Bachelor's,HR Specialist,Delhi,Medium,Manufacturing,Yes,Average,35.23
+40,16.3,Diploma,Data Analyst,Mumbai,Small,IT,No,Good,46.73
+38,18.1,Master's,Software Engineer,Chennai,Medium,Manufacturing,Yes,Average,53.36
+37,15.8,Master's,Data Analyst,Pune,Large,IT,No,Average,45.59
+26,3.7,Diploma,Data Scientist,Hyderabad,Medium,Healthcare,Yes,Good,15.98
+38,11.2,Bachelor's,Junior Developer,Mumbai,Medium,Retail,No,Average,24.74
+24,2.0,Master's,Accountant,Delhi,Medium,Finance,No,Excellent,12.47
+39,13.1,High School,Project Manager,Kochi,Medium,Education,No,Good,35.01
+42,19.1,Bachelor's,Junior Developer,Mumbai,Large,Consulting,No,Average,53.82
+35,10.3,Bachelor's,Accountant,Mumbai,Medium,Manufacturing,No,Average,24.33
+32,8.7,Bachelor's,Accountant,Bangalore,Small,IT,Yes,Good,23.55
+27,0.7,Bachelor's,Junior Developer,Kochi,Large,Retail,Yes,Good,10.41
+42,19.2,Bachelor's,Software Engineer,Bangalore,Large,Retail,Yes,Good,60.79
+22,2.1,Diploma,Data Analyst,Chennai,Medium,IT,No,Good,10.66
+21,0.8,Bachelor's,Project Manager,Kolkata,Small,Retail,No,Good,10.54
+28,4.9,Master's,Marketing Executive,Pune,Small,Education,No,Good,15.35
+22,1.3,Bachelor's,Data Scientist,Hyderabad,Medium,Retail,No,Excellent,13.84
+34,9.1,High School,HR Specialist,Mumbai,Small,Healthcare,No,Good,20.93
+33,10.3,Master's,Junior Developer,Bangalore,Small,Finance,Yes,Good,26.05
+36,6.3,Diploma,HR Specialist,Mumbai,Large,Manufacturing,Yes,Good,18.78
+21,1.0,Master's,Business Analyst,Kolkata,Medium,Manufacturing,No,Excellent,14.08
+27,2.2,Bachelor's,Project Manager,Mumbai,Small,Finance,Yes,Good,14.47
+29,7.7,Master's,Data Scientist,Bangalore,Small,Finance,Yes,Excellent,25.14
+24,1.2,Diploma,Senior Developer,Kochi,Medium,Retail,No,Excellent,10.88
+38,14.0,Diploma,Business Analyst,Hyderabad,Medium,Manufacturing,No,Average,37.73
+22,4.1,Bachelor's,Junior Developer,Delhi,Large,Finance,No,Good,14.1
+31,6.0,High School,Senior Developer,Pune,Small,Finance,Yes,Good,17.29
+37,7.9,Diploma,Software Engineer,Chennai,Small,Manufacturing,No,Good,17.62
+31,8.3,Master's,Accountant,Kolkata,Medium,Retail,Yes,Good,22.69
+25,0.0,Master's,Data Scientist,Hyderabad,Medium,Consulting,No,Excellent,13.2
+29,2.2,High School,Business Analyst,Pune,Medium,Manufacturing,Yes,Good,10.87
+41,17.3,Master's,HR Specialist,Kolkata,Large,Consulting,No,Good,53.13
+23,0.0,Master's,Project Manager,Hyderabad,Medium,Finance,No,Average,13.26
+29,10.2,Master's,Project Manager,Delhi,Medium,Finance,No,Good,30.28
+35,9.8,Master's,Senior Developer,Kolkata,Large,Finance,Yes,Excellent,29.12
+30,6.7,Master's,Project Manager,Mumbai,Small,IT,No,Good,20.98
+30,8.6,Bachelor's,HR Specialist,Bangalore,Large,Manufacturing,Yes,Average,25.05
+40,15.6,Bachelor's,Business Analyst,Chennai,Medium,Retail,No,Excellent,43.93
+39,16.8,Master's,Project Manager,Kolkata,Medium,IT,Yes,Excellent,52.37
+28,5.2,High School,Business Analyst,Bangalore,Large,Finance,Yes,Good,17.78
+32,6.4,Bachelor's,Business Analyst,Kochi,Medium,Finance,No,Average,16.9
+25,4.8,High School,Project Manager,Kochi,Medium,Healthcare,No,Good,17.3
+36,9.6,Master's,Data Scientist,Kolkata,Medium,Education,No,Average,26.38
+34,13.7,Bachelor's,Software Engineer,Hyderabad,Medium,Healthcare,Yes,Good,35.79
+27,4.6,Master's,Senior Developer,Delhi,Medium,Consulting,No,Good,19.47
+35,6.6,Master's,Accountant,Chennai,Small,Finance,Yes,Excellent,17.81
+45,18.6,PhD,Software Engineer,Mumbai,Large,Education,Yes,Good,59.65
+25,1.0,Diploma,Data Analyst,Kochi,Medium,Education,No,Excellent,9.27
+31,9.2,Master's,HR Specialist,Pune,Medium,Healthcare,Yes,Excellent,26.89
+37,14.2,Master's,Senior Developer,Hyderabad,Small,Manufacturing,No,Average,41.13
+27,3.0,High School,Business Analyst,Chennai,Medium,Consulting,Yes,Average,10.5
+25,0.9,Master's,HR Specialist,Pune,Small,IT,Yes,Good,9.38
+27,2.8,Bachelor's,Junior Developer,Chennai,Small,Education,No,Good,11.06
+42,18.4,Bachelor's,Senior Developer,Kochi,Medium,IT,Yes,Good,61.85
+24,0.2,Bachelor's,Marketing Executive,Kolkata,Small,Education,No,Good,8.36
+24,3.8,Bachelor's,Accountant,Kolkata,Medium,Retail,No,Good,12.33
+23,0.6,Diploma,Business Analyst,Chennai,Medium,Healthcare,Yes,Good,7.47
+28,2.2,High School,Accountant,Pune,Medium,Healthcare,No,Good,8.35
+33,12.4,High School,Junior Developer,Delhi,Large,Healthcare,Yes,Average,30.08
+28,4.8,Bachelor's,Marketing Executive,Bangalore,Large,Healthcare,Yes,Average,14.48
+33,11.4,Bachelor's,Software Engineer,Hyderabad,Medium,Healthcare,Yes,Average,28.69
+36,11.8,Diploma,Junior Developer,Kochi,Large,Healthcare,No,Excellent,32.33
+40,17.0,Master's,HR Specialist,Mumbai,Large,Retail,No,Excellent,53.85
+28,0.1,Master's,Data Scientist,Chennai,Medium,IT,No,Good,12.98
+42,17.1,Bachelor's,HR Specialist,Mumbai,Large,IT,No,Average,47.81
+33,12.4,Master's,Accountant,Hyderabad,Small,Education,Yes,Good,34.64
+29,3.3,Bachelor's,Junior Developer,Mumbai,Medium,Retail,No,Average,10.58
+38,15.5,Master's,Project Manager,Pune,Medium,Finance,No,Good,44.23
+40,17.1,High School,Accountant,Kochi,Small,Finance,No,Good,47.11
+30,5.1,Master's,Data Scientist,Kochi,Medium,Retail,No,Excellent,21.05
+41,18.4,PhD,Project Manager,Pune,Large,Healthcare,No,Average,56.3
+35,9.1,Master's,Data Scientist,Mumbai,Medium,Manufacturing,Yes,Good,27.21
+34,12.1,Bachelor's,Business Analyst,Chennai,Small,Finance,No,Excellent,32.07
+42,19.7,Bachelor's,Junior Developer,Bangalore,Small,IT,No,Good,60.4
+30,7.2,Bachelor's,Accountant,Delhi,Medium,Education,No,Average,17.15
+39,16.3,Master's,Accountant,Chennai,Large,Healthcare,Yes,Excellent,48.57
+33,6.4,Master's,Accountant,Pune,Large,Manufacturing,No,Good,20.13
+42,16.0,PhD,Data Scientist,Bangalore,Medium,Education,Yes,Good,50.94
+40,12.0,Bachelor's,Project Manager,Kochi,Small,Healthcare,No,Good,32.45
+34,4.3,High School,Data Analyst,Hyderabad,Small,Finance,No,Excellent,11.21
+30,8.3,Bachelor's,Senior Developer,Kolkata,Medium,Finance,Yes,Good,21.96
+31,6.4,High School,Accountant,Chennai,Large,Manufacturing,No,Good,17.26
+23,1.6,Bachelor's,Project Manager,Chennai,Large,Finance,Yes,Good,13.7
+23,0.6,Bachelor's,Marketing Executive,Pune,Medium,Education,No,Average,9.13
+29,6.9,Master's,Software Engineer,Kochi,Medium,Manufacturing,No,Good,18.31
+22,0.4,Diploma,Marketing Executive,Mumbai,Medium,Consulting,Yes,Average,6.72
+25,3.3,Diploma,HR Specialist,Chennai,Medium,Finance,No,Good,12.17
+38,14.5,High School,Business Analyst,Bangalore,Medium,IT,Yes,Good,37.62
+35,14.2,Master's,Software Engineer,Hyderabad,Medium,Manufacturing,No,Good,41.2
+41,14.8,Master's,Project Manager,Kochi,Medium,Retail,No,Good,44.81
+28,6.3,High School,Project Manager,Kochi,Large,Healthcare,Yes,Good,19.3
+49,17.8,High School,Project Manager,Delhi,Medium,Retail,No,Good,52.03
+35,11.9,Bachelor's,Junior Developer,Hyderabad,Small,Finance,No,Average,27.12
+27,2.5,Bachelor's,Data Scientist,Chennai,Small,Retail,No,Excellent,14.2
+24,2.9,Bachelor's,Senior Developer,Hyderabad,Medium,Manufacturing,No,Excellent,13.87
+42,13.9,Bachelor's,HR Specialist,Mumbai,Medium,Healthcare,No,Good,36.1
+30,3.5,Master's,Senior Developer,Delhi,Medium,Education,No,Good,17.17
+35,10.1,Bachelor's,Data Scientist,Hyderabad,Large,Healthcare,Yes,Average,29.85
+40,19.8,Master's,HR Specialist,Chennai,Medium,IT,Yes,Average,59.71
+25,0.1,High School,Junior Developer,Kolkata,Medium,IT,No,Good,6.88
+21,0.3,PhD,Marketing Executive,Chennai,Large,Consulting,Yes,Excellent,14.25
+48,19.9,PhD,Marketing Executive,Hyderabad,Medium,Education,No,Good,65.55
+38,11.7,Master's,Junior Developer,Pune,Medium,Finance,Yes,Good,31.48
+27,2.5,Bachelor's,Junior Developer,Kochi,Small,IT,No,Excellent,11.32
+36,17.9,Diploma,Accountant,Hyderabad,Medium,Healthcare,No,Good,52.05
+39,17.6,Master's,Senior Developer,Hyderabad,Large,Consulting,Yes,Good,57.69
+36,10.7,Master's,Accountant,Mumbai,Large,Healthcare,Yes,Good,28.66
+39,12.4,Diploma,Data Scientist,Kochi,Medium,Consulting,No,Average,32.69
+32,5.5,Bachelor's,Data Analyst,Kochi,Medium,Education,No,Excellent,16.15
+21,1.0,Bachelor's,Senior Developer,Mumbai,Medium,Manufacturing,No,Good,12.36
+37,11.9,Master's,HR Specialist,Delhi,Large,Manufacturing,No,Good,33.33
+32,5.9,Master's,Software Engineer,Delhi,Medium,IT,No,Good,18.48
+33,13.3,Bachelor's,Data Scientist,Kolkata,Large,IT,Yes,Excellent,40.8
+41,16.7,Bachelor's,Data Analyst,Bangalore,Small,Consulting,No,Good,47.43
+25,0.4,Bachelor's,Software Engineer,Mumbai,Small,Consulting,Yes,Good,8.29
+35,11.9,Bachelor's,Data Analyst,Delhi,Small,IT,Yes,Average,30.81
+24,4.6,High School,Project Manager,Chennai,Small,Retail,No,Excellent,15.23
+41,17.5,Master's,HR Specialist,Mumbai,Large,Consulting,No,Good,51.98
+28,5.1,Bachelor's,Junior Developer,Chennai,Medium,Consulting,No,Good,13.48
+36,12.2,Bachelor's,Accountant,Pune,Medium,Healthcare,No,Excellent,30.62
+34,11.1,Bachelor's,Accountant,Kochi,Medium,Manufacturing,No,Average,26.78
+31,7.9,Diploma,HR Specialist,Bangalore,Medium,Retail,Yes,Good,19.64
+38,13.6,Bachelor's,Business Analyst,Mumbai,Medium,Consulting,No,Good,36.55
+40,14.5,Diploma,Data Scientist,Bangalore,Small,Finance,No,Good,43.25
+35,11.3,High School,Accountant,Kolkata,Medium,Retail,No,Good,25.53
+38,15.2,Master's,Marketing Executive,Pune,Small,IT,No,Good,42.93
+44,19.7,Bachelor's,Project Manager,Chennai,Large,Healthcare,No,Average,65.04
+28,8.4,Bachelor's,Software Engineer,Kochi,Small,IT,No,Average,20.41
+35,10.3,Bachelor's,Project Manager,Chennai,Large,Education,No,Average,28.07
+24,0.2,Master's,Business Analyst,Mumbai,Large,Manufacturing,No,Excellent,12.17
+40,15.9,Bachelor's,Business Analyst,Chennai,Small,Retail,No,Good,42.48
+37,10.4,Master's,Data Scientist,Pune,Small,Healthcare,Yes,Good,29.78
+27,8.2,Master's,Senior Developer,Bangalore,Large,Healthcare,No,Good,25.73
+21,1.9,Bachelor's,Marketing Executive,Chennai,Medium,Healthcare,Yes,Good,9.53
+42,17.8,Bachelor's,Junior Developer,Hyderabad,Medium,Manufacturing,No,Average,49.86
+32,7.9,Master's,Software Engineer,Bangalore,Small,Finance,No,Good,21.45
+38,13.7,Bachelor's,Project Manager,Delhi,Medium,IT,No,Good,39.36
+26,3.0,Bachelor's,Business Analyst,Hyderabad,Medium,Education,Yes,Good,11.16
+45,19.2,Bachelor's,Data Analyst,Delhi,Large,Manufacturing,No,Good,58.63
+30,3.6,Bachelor's,Data Scientist,Delhi,Medium,Education,No,Excellent,16.74
+29,4.0,High School,Data Analyst,Pune,Large,Finance,Yes,Excellent,13.87
+41,17.2,Bachelor's,Data Scientist,Hyderabad,Medium,IT,No,Average,53.97
+37,18.3,Diploma,Junior Developer,Hyderabad,Small,Consulting,Yes,Average,51.16
+30,4.2,Bachelor's,Project Manager,Kochi,Medium,Manufacturing,No,Average,11.96
+36,9.4,Bachelor's,Project Manager,Bangalore,Small,Finance,Yes,Good,26.65
+40,14.7,Master's,Data Analyst,Delhi,Medium,IT,No,Excellent,43.42
+39,17.6,High School,Senior Developer,Bangalore,Medium,IT,No,Excellent,54.17
+33,7.6,Bachelor's,Marketing Executive,Kolkata,Medium,Healthcare,No,Good,17.46
+36,10.3,Bachelor's,Software Engineer,Mumbai,Small,Manufacturing,Yes,Excellent,29.51
+43,14.8,High School,Junior Developer,Kochi,Medium,Finance,No,Good,36.14
+36,14.6,Bachelor's,Junior Developer,Mumbai,Medium,Manufacturing,No,Excellent,41.2
+39,15.7,High School,Accountant,Delhi,Medium,IT,Yes,Good,42.79
+37,11.4,Diploma,Data Analyst,Chennai,Medium,Manufacturing,Yes,Average,28.23
+26,2.1,Bachelor's,Software Engineer,Kochi,Small,Finance,Yes,Average,10.75
+39,18.1,Bachelor's,Accountant,Mumbai,Medium,Consulting,No,Excellent,55.6
+42,17.3,Bachelor's,Software Engineer,Mumbai,Medium,Education,Yes,Good,50.2
+41,16.0,High School,Data Analyst,Kolkata,Medium,Finance,No,Good,44.33
+26,2.0,Diploma,Junior Developer,Delhi,Small,Finance,No,Good,7.24
+29,4.1,High School,HR Specialist,Mumbai,Medium,Manufacturing,No,Good,11.94
+38,14.9,Bachelor's,HR Specialist,Pune,Medium,Healthcare,No,Excellent,39.93
+28,0.5,Bachelor's,Marketing Executive,Bangalore,Medium,Healthcare,No,Average,7.51
+41,19.6,Bachelor's,Senior Developer,Kochi,Large,Manufacturing,Yes,Average,62.42
+30,7.5,Diploma,Data Analyst,Kolkata,Large,Education,No,Good,19.44
+38,14.4,High School,Business Analyst,Kochi,Small,Retail,Yes,Good,34.95
+44,17.8,Master's,Accountant,Delhi,Medium,Education,Yes,Average,53.35
+28,7.9,High School,Junior Developer,Bangalore,Medium,IT,No,Average,16.59
+27,6.4,Diploma,HR Specialist,Hyderabad,Large,IT,Yes,Average,17.59
+31,12.2,Diploma,Accountant,Delhi,Small,IT,Yes,Good,29.79
+36,11.6,PhD,Project Manager,Kolkata,Medium,Retail,No,Average,31.65
+29,8.2,Bachelor's,HR Specialist,Pune,Medium,Education,Yes,Average,19.84
+35,12.0,Bachelor's,Junior Developer,Kolkata,Medium,Manufacturing,Yes,Good,28.9
+44,18.7,PhD,Junior Developer,Kochi,Medium,Consulting,No,Excellent,59.75
+32,9.4,High School,Junior Developer,Pune,Medium,Finance,No,Excellent,22.55
+28,3.9,PhD,Software Engineer,Bangalore,Small,Consulting,No,Good,15.27
+31,7.5,Diploma,Business Analyst,Bangalore,Medium,Consulting,Yes,Good,20.71
+34,7.9,Bachelor's,HR Specialist,Bangalore,Large,Retail,No,Excellent,21.57
+28,2.6,Bachelor's,Marketing Executive,Chennai,Large,Education,No,Good,10.32
+26,3.3,Bachelor's,Senior Developer,Mumbai,Medium,Finance,Yes,Good,15.92
+37,13.7,Master's,Business Analyst,Kolkata,Medium,Finance,Yes,Good,36.95
+33,6.8,Diploma,Software Engineer,Mumbai,Small,IT,Yes,Good,15.62
+44,19.1,PhD,Business Analyst,Kolkata,Large,Retail,No,Good,62.4
+25,4.9,Bachelor's,Junior Developer,Pune,Large,Education,Yes,Good,15.42
+28,2.0,Bachelor's,Junior Developer,Bangalore,Medium,Finance,No,Average,7.9
+36,15.1,PhD,Junior Developer,Bangalore,Large,IT,No,Excellent,45.27
+45,17.6,High School,Marketing Executive,Hyderabad,Small,IT,Yes,Good,48.03
+32,5.6,Master's,Senior Developer,Delhi,Medium,Retail,No,Good,21.81
+29,4.0,Bachelor's,Data Scientist,Delhi,Small,Retail,Yes,Average,15.89
+28,3.7,Master's,Data Scientist,Chennai,Small,Retail,Yes,Good,15.87
+34,10.4,Diploma,Marketing Executive,Mumbai,Medium,IT,No,Good,26.37
+35,9.4,Bachelor's,Data Analyst,Mumbai,Medium,IT,No,Average,21.72
+28,5.2,Master's,Junior Developer,Pune,Large,IT,No,Good,15.48
+25,0.9,Bachelor's,Data Analyst,Kolkata,Medium,Manufacturing,No,Good,9.29
+36,9.6,Diploma,Senior Developer,Delhi,Large,Manufacturing,Yes,Excellent,29.1
+42,19.2,Bachelor's,Marketing Executive,Kolkata,Large,Healthcare,No,Average,57.43
+36,13.1,Master's,Marketing Executive,Delhi,Medium,IT,Yes,Excellent,37.57
+31,9.9,High School,Junior Developer,Delhi,Large,Healthcare,No,Good,23.93
+24,2.2,Master's,Marketing Executive,Bangalore,Medium,Manufacturing,No,Average,11.42
+24,5.0,PhD,Junior Developer,Hyderabad,Medium,Finance,Yes,Average,15.19
+32,5.9,High School,HR Specialist,Hyderabad,Small,Manufacturing,No,Average,12.0
+44,15.3,Diploma,Data Analyst,Pune,Medium,Education,No,Good,41.53
+45,17.5,Master's,Data Analyst,Mumbai,Large,IT,No,Good,54.19
+38,18.0,High School,Data Scientist,Mumbai,Medium,Consulting,Yes,Good,55.54
+46,19.7,Bachelor's,Data Analyst,Hyderabad,Medium,Education,Yes,Average,58.5
+47,19.6,Master's,Marketing Executive,Bangalore,Small,Retail,Yes,Excellent,61.36
+42,19.1,Bachelor's,Business Analyst,Mumbai,Medium,IT,Yes,Average,58.57
+26,1.4,Bachelor's,Accountant,Pune,Large,Healthcare,No,Good,12.57
+22,2.8,Master's,Data Scientist,Kolkata,Medium,Retail,Yes,Excellent,17.09
+31,6.1,Bachelor's,Project Manager,Chennai,Large,Retail,Yes,Excellent,20.49
+32,11.1,Diploma,Data Scientist,Mumbai,Medium,IT,No,Good,31.21
+26,1.9,Bachelor's,Marketing Executive,Kolkata,Large,Retail,Yes,Good,9.73
+37,16.9,Master's,Project Manager,Chennai,Medium,Consulting,No,Average,52.22
+38,12.3,Bachelor's,Data Scientist,Pune,Medium,Manufacturing,No,Average,34.25
+37,10.8,Bachelor's,Data Scientist,Mumbai,Small,Finance,Yes,Good,29.78
+25,3.3,Bachelor's,Data Analyst,Chennai,Medium,Consulting,No,Average,10.83
+26,5.1,High School,Project Manager,Bangalore,Large,Retail,Yes,Good,16.78
+22,3.2,Bachelor's,HR Specialist,Pune,Medium,IT,No,Average,12.08
+40,17.0,High School,Data Scientist,Mumbai,Small,IT,No,Excellent,51.01
+34,11.7,PhD,Accountant,Kolkata,Large,Consulting,No,Excellent,34.48
+35,14.7,Diploma,Accountant,Bangalore,Small,Finance,No,Excellent,40.75
+31,5.9,Master's,Data Scientist,Pune,Medium,IT,No,Good,19.63
+30,7.4,Diploma,Business Analyst,Mumbai,Large,Education,No,Average,19.42
+29,8.1,Bachelor's,Software Engineer,Pune,Medium,Education,Yes,Average,20.36
+38,15.2,Bachelor's,Business Analyst,Hyderabad,Large,Retail,Yes,Good,41.92
+42,15.4,Bachelor's,Senior Developer,Kolkata,Medium,Retail,No,Good,45.03
+30,4.1,Master's,Project Manager,Pune,Large,Consulting,No,Good,17.49
+42,18.8,PhD,Senior Developer,Delhi,Medium,Manufacturing,No,Good,61.82
+28,2.4,Master's,Data Scientist,Bangalore,Medium,IT,No,Good,16.18
+39,17.9,Diploma,Data Analyst,Chennai,Small,IT,Yes,Average,50.29
+26,2.0,Master's,Marketing Executive,Hyderabad,Large,IT,Yes,Good,14.6
+30,5.3,Diploma,Junior Developer,Bangalore,Small,Healthcare,No,Good,11.74
+40,16.9,Master's,Accountant,Chennai,Large,Healthcare,Yes,Good,50.34
+29,3.6,Bachelor's,Business Analyst,Mumbai,Small,Consulting,No,Excellent,14.74
+30,8.3,Bachelor's,Project Manager,Mumbai,Small,Healthcare,No,Good,23.46
+34,9.0,Diploma,Project Manager,Bangalore,Large,IT,No,Good,26.2
+30,4.9,High School,HR Specialist,Delhi,Small,Consulting,No,Excellent,16.39
+31,14.2,Bachelor's,Software Engineer,Mumbai,Medium,Finance,No,Average,38.53
+44,17.0,Master's,Marketing Executive,Bangalore,Large,Consulting,No,Good,53.01
+34,17.5,Master's,Senior Developer,Hyderabad,Small,Manufacturing,Yes,Good,53.93
+29,6.8,PhD,HR Specialist,Mumbai,Small,Consulting,No,Good,18.45
+37,10.6,High School,Data Analyst,Mumbai,Medium,Manufacturing,No,Average,24.65
+28,5.0,Bachelor's,Marketing Executive,Hyderabad,Small,Finance,Yes,Excellent,16.0
+25,4.9,Bachelor's,Marketing Executive,Bangalore,Small,Retail,No,Excellent,15.87
+24,3.2,Bachelor's,Senior Developer,Kolkata,Small,Healthcare,No,Average,12.79
+45,18.8,Bachelor's,HR Specialist,Hyderabad,Medium,Retail,Yes,Average,55.11
+37,17.8,Bachelor's,Data Scientist,Kolkata,Medium,Manufacturing,No,Average,53.31
+42,15.5,Bachelor's,Senior Developer,Kolkata,Small,Education,No,Good,44.08
+34,10.4,Diploma,Project Manager,Kolkata,Medium,Healthcare,No,Good,27.95
+31,9.8,Bachelor's,Business Analyst,Chennai,Medium,Consulting,Yes,Average,25.58
+33,10.6,Bachelor's,Junior Developer,Hyderabad,Small,Retail,No,Excellent,25.32
+32,10.7,Diploma,Business Analyst,Pune,Medium,Consulting,No,Good,27.72
+35,8.7,Master's,Accountant,Bangalore,Large,Finance,No,Good,24.24
+28,2.6,Bachelor's,Project Manager,Kochi,Medium,Manufacturing,Yes,Good,13.63
+22,2.5,Master's,HR Specialist,Delhi,Medium,Healthcare,Yes,Good,12.22
+42,19.0,Bachelor's,Data Analyst,Bangalore,Medium,Education,No,Good,60.03
+31,9.6,Master's,Software Engineer,Mumbai,Small,Consulting,No,Good,24.85
+46,19.1,Master's,Project Manager,Mumbai,Large,Healthcare,Yes,Good,63.11
+24,3.3,Master's,Accountant,Bangalore,Large,Finance,Yes,Excellent,17.26
+39,11.1,Bachelor's,Senior Developer,Pune,Large,Consulting,No,Good,30.89
+28,4.2,Bachelor's,Marketing Executive,Bangalore,Small,Consulting,No,Excellent,14.21
+26,5.1,High School,Marketing Executive,Kochi,Medium,Healthcare,No,Good,12.2
+23,0.6,Bachelor's,Marketing Executive,Hyderabad,Small,Healthcare,No,Good,7.71
+24,2.4,High School,Data Analyst,Pune,Medium,Finance,No,Good,9.01
+39,18.3,Bachelor's,Data Analyst,Delhi,Medium,IT,No,Good,55.82
+31,6.4,High School,Data Scientist,Mumbai,Medium,Education,Yes,Good,18.74
+33,12.2,Bachelor's,Accountant,Mumbai,Small,Finance,No,Average,30.89
+28,9.3,Diploma,Business Analyst,Pune,Large,Manufacturing,Yes,Average,23.77
+31,8.0,Bachelor's,Data Scientist,Pune,Small,Finance,No,Average,20.02
+30,10.6,Master's,Business Analyst,Delhi,Small,Retail,Yes,Excellent,30.35
+26,3.7,Master's,Project Manager,Delhi,Large,Education,No,Excellent,16.68
+42,19.8,Bachelor's,Data Analyst,Kolkata,Large,Retail,No,Good,62.33
+38,16.4,Bachelor's,Junior Developer,Kochi,Medium,IT,Yes,Average,43.65
+44,14.8,Bachelor's,HR Specialist,Hyderabad,Medium,Education,No,Excellent,41.23
+34,9.4,Bachelor's,HR Specialist,Mumbai,Small,Retail,Yes,Good,21.79
+28,3.1,Bachelor's,Business Analyst,Delhi,Small,Healthcare,No,Good,11.92
+38,18.4,Diploma,Marketing Executive,Chennai,Medium,Consulting,No,Good,54.43
+29,6.8,PhD,Junior Developer,Chennai,Medium,Education,Yes,Good,18.68
+26,1.0,High School,Project Manager,Mumbai,Medium,Healthcare,No,Average,8.92
+28,6.8,Master's,Marketing Executive,Bangalore,Small,IT,No,Good,19.49
+42,15.9,Bachelor's,Data Scientist,Hyderabad,Medium,Finance,Yes,Good,48.49
+33,12.5,Bachelor's,Data Scientist,Kochi,Large,Education,No,Average,32.23
+38,15.0,Master's,Accountant,Mumbai,Small,Healthcare,No,Good,44.37
+38,15.9,High School,HR Specialist,Hyderabad,Small,Consulting,No,Good,42.45
+29,4.2,Master's,HR Specialist,Mumbai,Medium,Manufacturing,Yes,Good,15.83
+41,18.5,Bachelor's,Data Scientist,Mumbai,Large,Finance,No,Excellent,60.68
+32,8.8,High School,Senior Developer,Chennai,Medium,Retail,Yes,Excellent,22.54
+36,12.8,High School,Project Manager,Delhi,Large,Education,No,Good,36.11
+22,0.0,Master's,Business Analyst,Delhi,Medium,IT,No,Good,10.22
+45,19.9,Bachelor's,HR Specialist,Kolkata,Small,Retail,No,Good,60.39
+30,5.6,Master's,Marketing Executive,Mumbai,Medium,Education,Yes,Good,17.21

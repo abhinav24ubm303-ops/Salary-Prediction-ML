@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary Prediction Using Random Forest Regression | Machine Learning Project</title>
+  <meta name="description" content="A complete academic machine learning web application demonstrating Random Forest Regression for employee salary prediction with interactive pipeline, evaluation metrics, dataset explorer, visualizations, and presentation mode.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Chart.js for High-Fidelity Data Visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Application Stylesheet -->
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+  <!-- Sticky Top Navigation Bar -->
+  <nav class="main-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Salary Prediction</h1>
+          <span>Random Forest Regression</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#predict" class="nav-link">Predict Salary</a></li>
+        <li><a href="#metrics" class="nav-link">Model Performance</a></li>
+        <li><a href="#dataset" class="nav-link">Dataset</a></li>
+        <li><a href="#visualizations" class="nav-link">Visualizations</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#model-details" class="nav-link">Model</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="btnPresentationMode" class="btn-presentation" title="Launch Classroom Presentation Mode">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          Presentation Mode
+        </button>
+
+        <button id="btnThemeToggle" class="btn-icon" aria-label="Toggle Light/Dark Theme" title="Toggle Theme">
+          <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+          &#9776;
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: HOME PAGE / HERO -->
+  <header class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+          </svg>
+          Machine Learning Based Salary Prediction System
+        </div>
+        <h1 class="hero-title">
+          Salary Prediction Using <span class="gradient-text">Random Forest Regression</span>
+        </h1>
+        <p class="hero-subtitle">
+          Predict an employee's expected salary using machine learning based on experience, education, job role, location, company characteristics, remote work status, and performance.
+        </p>
+        <p class="hero-description">
+          This system uses an ensemble of 100 Scikit-Learn Decision Trees trained on real demographic and professional data to produce highly accurate, robust salary valuations with statistical confidence intervals.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="#predict" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+            Predict Salary
+          </a>
+          <a href="#dataset" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 3h18v18H3zM3 9h18M3 15h18M9 3v18M15 3v18"></path>
+            </svg>
+            Explore Dataset
+          </a>
+          <a href="#metrics" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+            Model Performance
+          </a>
+          <a href="#how-it-works" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            How It Works
+          </a>
+        </div>
+
+        <!-- Hero Stat Highlights -->
+        <div class="hero-highlights">
+          <div class="highlight-card">
+            <div class="highlight-value" id="heroStatRows">1,000</div>
+            <div class="highlight-label">Employee Records</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-value" id="heroStatFeatures">9</div>
+            <div class="highlight-label">Input Features</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-value" id="heroStatR2">98.28%</div>
+            <div class="highlight-label">R² Test Accuracy</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-value" id="heroStatTrees">100</div>
+            <div class="highlight-label">Decision Trees</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 2: MODEL EVALUATION METRICS -->
+    <section class="section" id="metrics">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">Empirical Validation</span>
+            <h2 class="section-title">Model Evaluation Metrics</h2>
+            <p class="section-subtitle">
+              Calculated dynamically on the unseen 20% test dataset (200 records) using Scikit-Learn regression metrics.
+            </p>
+          </div>
+          <button class="btn-audio-explain" data-explain-key="metrics">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+            Listen to Metrics Explanation
+          </button>
+        </div>
+
+        <!-- Metric Cards Grid -->
+        <div class="metrics-grid">
+          <!-- R2 Score Card -->
+          <div class="metric-card r2">
+            <div class="metric-header">
+              <span class="metric-title">R² Score</span>
+              <span class="metric-badge">Coefficient of Determination</span>
+            </div>
+            <div class="metric-value" id="metricR2">0.9828</div>
+            <div class="metric-unit">98.28% Variance Explained</div>
+            <p class="metric-desc">
+              Measures the proportion of variance in salary explained by the model's features. Over 98% reflects exceptional predictive fit.
+            </p>
+          </div>
+
+          <!-- MAE Card -->
+          <div class="metric-card mae">
+            <div class="metric-header">
+              <span class="metric-title">MAE</span>
+              <span class="metric-badge">Mean Absolute Error</span>
+            </div>
+            <div class="metric-value" id="metricMAE">1.73</div>
+            <div class="metric-unit">Lakh INR / Year</div>
+            <p class="metric-desc">
+              Average absolute difference between predicted and actual salary. On average, predictions deviate by only ₹1.73 Lakh.
+            </p>
+          </div>
+
+          <!-- MSE Card -->
+          <div class="metric-card mse">
+            <div class="metric-header">
+              <span class="metric-title">MSE</span>
+              <span class="metric-badge">Mean Squared Error</span>
+            </div>
+            <div class="metric-value" id="metricMSE">4.77</div>
+            <div class="metric-unit">(Lakh INR)²</div>
+            <p class="metric-desc">
+              Penalizes larger prediction errors quadratically, ensuring the ensemble model avoids extreme outlier errors.
+            </p>
+          </div>
+
+          <!-- RMSE Card -->
+          <div class="metric-card rmse">
+            <div class="metric-header">
+              <span class="metric-title">RMSE</span>
+              <span class="metric-badge">Root Mean Squared Error</span>
+            </div>
+            <div class="metric-value" id="metricRMSE">2.18</div>
+            <div class="metric-unit">Lakh INR / Year</div>
+            <p class="metric-desc">
+              Standard deviation of test residuals, expressed in natural salary units (Lakhs). Directly comparable to standard deviation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benchmark Comparison Table -->
+        <div class="benchmark-card">
+          <h4>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+              <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+              <path d="M4 22h16"></path>
+              <path d="M10 14.66V17c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-2.34"></path>
+              <path d="M18 14.66V17c0 .55-.45 1-1 1h-2c-.55 0-1-.45-1-1v-2.34"></path>
+              <path d="M10 2v7.33a2 2 0 0 0 .4 1.2l2.6 3.47 2.6-3.47a2 2 0 0 0 .4-1.2V2"></path>
+            </svg>
+            Benchmark Model Comparison (Academic Viva Analysis)
+          </h4>
+          <p class="section-subtitle" style="margin-bottom: 1rem;">
+            Comparative evaluation showing why Random Forest Regression outperforms individual decision trees and linear baselines on the 20% test split.
+          </p>
+          <div class="table-responsive">
+            <table class="custom-table" id="benchmarkTable">
+              <thead>
+                <tr>
+                  <th>Algorithm</th>
+                  <th>R² Score</th>
+                  <th>MAE (Lakh)</th>
+                  <th>MSE</th>
+                  <th>RMSE (Lakh)</th>
+                  <th>MAPE (%)</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="benchmarkTableBody">
+                <!-- Injected by app.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SALARY PREDICTION INTERACTIVE PAGE -->
+    <section class="section" id="predict">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">Interactive Machine Learning Model</span>
+            <h2 class="section-title">Predict Employee Salary</h2>
+            <p class="section-subtitle">
+              Enter candidate details below. The trained Random Forest Pipeline processes the inputs in real time and computes the expected salary along with an ensemble confidence interval.
+            </p>
+          </div>
+          <button class="btn-audio-explain" data-explain-key="predict">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+            Listen to Prediction Guide
+          </button>
+        </div>
+
+        <div class="predict-layout">
+          <!-- Prediction Form Card -->
+          <div class="predict-form-card">
+            <!-- Validation Alert Banner -->
+            <div class="validation-banner" id="validationBanner">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span id="validationMessage">Validation error message here</span>
+            </div>
+
+            <form id="salaryPredictForm">
+              <div class="form-grid">
+                
+                <!-- Age Input -->
+                <div class="form-group">
+                  <label class="form-label" for="inputAge">
+                    <span>Age (Years)</span>
+                    <span class="range-val-badge" id="ageValBadge">32</span>
+                  </label>
+                  <div class="range-container">
+                    <input type="range" class="range-slider" id="inputAgeSlider" min="21" max="65" value="32" step="1">
+                    <input type="number" class="form-input range-number-box" id="inputAge" min="18" max="75" value="32">
+                  </div>
+                  <span class="form-help">Valid working age range: 18 - 75</span>
+                </div>
+
+                <!-- Experience Input -->
+                <div class="form-group">
+                  <label class="form-label" for="inputExperience">
+                    <span>Years of Experience</span>
+                    <span class="range-val-badge" id="expValBadge">8.5 yrs</span>
+                  </label>
+                  <div class="range-container">
+                    <input type="range" class="range-slider" id="inputExpSlider" min="0" max="30" value="8.5" step="0.5">
+                    <input type="number" class="form-input range-number-box" id="inputExperience" min="0" max="50" step="0.1" value="8.5">
+                  </div>
+                  <span class="form-help">Total career experience in years</span>
+                </div>
+
+                <!-- Education Level -->
+                <div class="form-group">
+                  <label class="form-label" for="inputEducation">Education Level</label>
+                  <select class="form-select" id="inputEducation" required>
+                    <option value="" disabled>Select Education</option>
+                  </select>
+                  <span class="form-help">Highest completed educational qualification</span>
+                </div>
+
+                <!-- Job Role -->
+                <div class="form-group">
+                  <label class="form-label" for="inputJobRole">Job Role</label>
+                  <select class="form-select" id="inputJobRole" required>
+                    <option value="" disabled>Select Job Role</option>
+                  </select>
+                  <span class="form-help">Designation / functional specialization</span>
+                </div>
+
+                <!-- Location -->
+                <div class="form-group">
+                  <label class="form-label" for="inputLocation">Work Location</label>
+                  <select class="form-select" id="inputLocation" required>
+                    <option value="" disabled>Select Location</option>
+                  </select>
+                  <span class="form-help">City / employment metro tier</span>
+                </div>
+
+                <!-- Company Size -->
+                <div class="form-group">
+                  <label class="form-label" for="inputCompanySize">Company Size</label>
+                  <select class="form-select" id="inputCompanySize" required>
+                    <option value="" disabled>Select Company Size</option>
+                  </select>
+                  <span class="form-help">Small (&lt;50), Medium (50-500), Large (500+)</span>
+                </div>
+
+                <!-- Industry -->
+                <div class="form-group">
+                  <label class="form-label" for="inputIndustry">Industry Sector</label>
+                  <select class="form-select" id="inputIndustry" required>
+                    <option value="" disabled>Select Industry</option>
+                  </select>
+                  <span class="form-help">Primary business domain</span>
+                </div>
+
+                <!-- Remote Work -->
+                <div class="form-group">
+                  <label class="form-label" for="inputRemoteWork">Remote Work</label>
+                  <select class="form-select" id="inputRemoteWork" required>
+                    <option value="No">No (On-Site / Hybrid)</option>
+                    <option value="Yes">Yes (Fully Remote)</option>
+                  </select>
+                  <span class="form-help">Work arrangement status</span>
+                </div>
+
+                <!-- Performance Rating -->
+                <div class="form-group full-width">
+                  <label class="form-label" for="inputPerformance">Performance Rating</label>
+                  <select class="form-select" id="inputPerformance" required>
+                    <option value="" disabled>Select Performance</option>
+                  </select>
+                  <span class="form-help">Annual review rating grade</span>
+                </div>
+
+              </div>
+
+              <button type="submit" class="btn-predict" id="btnSubmitPredict">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Predict Salary
+              </button>
+            </form>
+          </div>
+
+          <!-- Prediction Result Card -->
+          <div class="result-card" id="predictionResultCard">
+            <div class="result-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              ML Prediction Generated
+            </div>
+
+            <div class="result-title">Predicted Annual Salary</div>
+            <div class="result-primary-val" id="resPredictedAnnual">₹ 28.82 Lakh</div>
+
+            <div class="result-monthly-box">
+              <span class="result-monthly-label">Approx. Monthly Salary:</span>
+              <span class="result-monthly-val" id="resPredictedMonthly">₹240,167</span>
+            </div>
+
+            <div class="ensemble-details">
+              <div class="ensemble-row">
+                <span>Model Architecture:</span>
+                <span id="resModelBadge">Random Forest (100 Trees)</span>
+              </div>
+              <div class="ensemble-row">
+                <span>95% Confidence Interval:</span>
+                <span id="resConfidenceInterval">[₹24.16L - ₹33.47L]</span>
+              </div>
+              <div class="ensemble-row">
+                <span>Tree Consensus Std Dev:</span>
+                <span id="resStdDev">± ₹2.38 Lakh</span>
+              </div>
+              <div class="ensemble-row">
+                <span>Problem Classification:</span>
+                <span>Continuous Regression</span>
+              </div>
+            </div>
+
+            <div class="input-summary-box">
+              <div class="input-summary-title">Employee Input Summary</div>
+              <div class="summary-tags" id="inputSummaryTags">
+                <span class="summary-tag">Age: 32</span>
+                <span class="summary-tag">Experience: 8.5 yrs</span>
+                <span class="summary-tag">Role: Data Scientist</span>
+                <span class="summary-tag">Education: Bachelor's</span>
+                <span class="summary-tag">Location: Bangalore</span>
+                <span class="summary-tag">Size: Large</span>
+                <span class="summary-tag">Industry: IT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: DATASET EXPLORER -->
+    <section class="section" id="dataset">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">Primary Data Source</span>
+            <h2 class="section-title">Dataset Explorer</h2>
+            <p class="section-subtitle">
+              Inspect the primary Salary Prediction dataset containing 1,000 verified employee records across 9 independent variables and 1 continuous target variable.
+            </p>
+          </div>
+          <button class="btn-audio-explain" data-explain-key="dataset">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+            Listen to Dataset Details
+          </button>
+        </div>
+
+        <!-- Dataset Summary Badges -->
+        <div class="dataset-stats-bar">
+          <div class="dataset-stat-card">
+            <div class="stat-card-val" id="dsTotalRecords">1,000</div>
+            <div class="stat-card-lbl">Total Records</div>
+          </div>
+          <div class="dataset-stat-card">
+            <div class="stat-card-val">9</div>
+            <div class="stat-card-lbl">Total Features</div>
+          </div>
+          <div class="dataset-stat-card">
+            <div class="stat-card-val">2</div>
+            <div class="stat-card-lbl">Numerical Features</div>
+          </div>
+          <div class="dataset-stat-card">
+            <div class="stat-card-val">7</div>
+            <div class="stat-card-lbl">Categorical Features</div>
+          </div>
+          <div class="dataset-stat-card">
+            <div class="stat-card-val">salary_lakh</div>
+            <div class="stat-card-lbl">Target Variable</div>
+          </div>
+        </div>
+
+        <!-- Table Filtering & Search Controls -->
+        <div class="table-controls">
+          <div class="search-input-wrap">
+            <span class="search-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input type="text" class="search-input" id="tableSearchInput" placeholder="Search by role, city, industry, or education...">
+          </div>
+
+          <div class="filter-selects">
+            <select class="filter-select" id="filterRole">
+              <option value="">All Job Roles</option>
+            </select>
+            <select class="filter-select" id="filterLocation">
+              <option value="">All Locations</option>
+            </select>
+            <select class="filter-select" id="filterPageSize">
+              <option value="10">10 per page</option>
+              <option value="25">25 per page</option>
+              <option value="50">50 per page</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Table Card -->
+        <div class="dataset-table-card">
+          <div class="table-responsive">
+            <table class="custom-table" id="datasetTable">
+              <thead>
+                <tr>
+                  <th class="sortable-th" data-col="age">Age <span class="sort-icon">↕</span></th>
+                  <th class="sortable-th" data-col="experience_years">Experience (Yrs) <span class="sort-icon">↕</span></th>
+                  <th class="sortable-th" data-col="education_level">Education <span class="sort-icon">↕</span></th>
+                  <th class="sortable-th" data-col="job_role">Job Role <span class="sort-icon">↕</span></th>
+                  <th class="sortable-th" data-col="location">Location <span class="sort-icon">↕</span></th>
+                  <th class="sortable-th" data-col="company_size">Company Size <span class="sort-icon">↕</span></th>
+                  <th class="sortable-th" data-col="industry">Industry <span class="sort-icon">↕</span></th>
+                  <th class="sortable-th" data-col="remote_work">Remote <span class="sort-icon">↕</span></th>
+                  <th class="sortable-th" data-col="performance_rating">Performance <span class="sort-icon">↕</span></th>
+                  <th class="sortable-th" data-col="salary_lakh">Salary (₹ Lakh) <span class="sort-icon">↕</span></th>
+                </tr>
+              </thead>
+              <tbody id="datasetTableBody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Pagination Bar -->
+          <div class="pagination-bar">
+            <div id="tableRecordRange">Showing records 1 - 10 of 1,000</div>
+            <div class="pagination-controls">
+              <button class="btn-page" id="btnPrevPage" disabled>&laquo; Previous</button>
+              <span id="currentPageIndicator" style="font-weight: 600; padding: 0 0.5rem;">Page 1 of 100</span>
+              <button class="btn-page" id="btnNextPage">Next &raquo;</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: DATA VISUALIZATION (6 CHARTS) -->
+    <section class="section" id="visualizations">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">Exploratory Data Analysis</span>
+            <h2 class="section-title">Data Visualizations</h2>
+            <p class="section-subtitle">
+              Interactive charts generated directly from the 1,000 employee records illustrating the relationships between experience, age, education, role, company size, and compensation.
+            </p>
+          </div>
+          <button class="btn-audio-explain" data-explain-key="visualizations">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+            Listen to Chart Analysis
+          </button>
+        </div>
+
+        <div class="charts-grid">
+          <!-- Chart 1: Experience vs Salary -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div class="chart-title-group">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                  </svg>
+                  Chart 1: Experience vs Salary
+                </h4>
+                <p>Scatter plot: Years of Experience (X) vs Salary in Lakhs (Y)</p>
+              </div>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartExpVsSalary"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 2: Age vs Salary -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div class="chart-title-group">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 6v6l4 2"></path>
+                  </svg>
+                  Chart 2: Age vs Salary
+                </h4>
+                <p>Scatter plot: Employee Age (X) vs Salary in Lakhs (Y)</p>
+              </div>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartAgeVsSalary"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 3: Salary by Education Level -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div class="chart-title-group">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                  Chart 3: Salary by Education Level
+                </h4>
+                <p>Bar chart: Average and median annual compensation by degree</p>
+              </div>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartSalaryByEdu"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 4: Salary by Job Role -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div class="chart-title-group">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  Chart 4: Salary by Job Role
+                </h4>
+                <p>Ranked bar chart: Mean salary hierarchy across tech and business roles</p>
+              </div>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartSalaryByRole"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 5: Salary by Company Size -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div class="chart-title-group">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 21h18"></path>
+                    <path d="M9 8h1"></path>
+                    <path d="M9 12h1"></path>
+                    <path d="M9 16h1"></path>
+                    <path d="M14 8h1"></path>
+                    <path d="M14 12h1"></path>
+                    <path d="M14 16h1"></path>
+                    <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
+                  </svg>
+                  Chart 5: Salary by Company Size
+                </h4>
+                <p>Comparison of compensation across Small, Medium, and Large organizations</p>
+              </div>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartSalaryBySize"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 6: Salary Distribution -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div class="chart-title-group">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 3v18h18"></path>
+                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+                  </svg>
+                  Chart 6: Salary Distribution (Histogram)
+                </h4>
+                <p>Frequency distribution of salaries across 16 equal bins (5L - 66L)</p>
+              </div>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartSalaryDistribution"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 6: ACTUAL VS PREDICTED SALARY VISUALIZATION -->
+        <div class="actual-pred-card">
+          <div class="section-title-wrap" style="margin-bottom: 1.5rem;">
+            <span class="section-tag">Model Validation Verification</span>
+            <h3 style="font-size: 1.4rem; font-weight: 800;">Actual Salary vs. Predicted Salary (20% Test Split)</h3>
+            <p class="section-subtitle">
+              Scatter plot comparing real employee salaries against Random Forest model predictions on 200 hold-out test samples. The diagonal dashed line represents perfect prediction ($y = x$).
+            </p>
+          </div>
+
+          <div class="actual-pred-grid">
+            <div class="chart-canvas-wrap tall">
+              <canvas id="chartActualVsPredicted"></canvas>
+            </div>
+
+            <div class="actual-pred-info">
+              <h5>Analytical Interpretation</h5>
+              <p>
+                Points clustering tightly along the 45-degree diagonal reference line signify that the Random Forest model achieves high generalizability without noticeable underfitting or overfitting.
+              </p>
+              <div class="stat-pills-list">
+                <div class="stat-pill-row">
+                  <span>Total Test Samples:</span>
+                  <strong>200 Records</strong>
+                </div>
+                <div class="stat-pill-row">
+                  <span>Test R² Score:</span>
+                  <strong style="color: var(--accent-secondary);">0.9828 (98.28%)</strong>
+                </div>
+                <div class="stat-pill-row">
+                  <span>Mean Absolute Error:</span>
+                  <strong style="color: var(--accent-primary);">₹1.73 Lakh</strong>
+                </div>
+                <div class="stat-pill-row">
+                  <span>Residual Mean:</span>
+                  <strong>-0.03 Lakh (Unbiased)</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: FEATURE IMPORTANCE -->
+    <section class="section" id="feature-importance">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">Feature Contribution Analysis</span>
+            <h2 class="section-title">Feature Importance</h2>
+            <p class="section-subtitle">
+              Derived from Scikit-Learn's Gini impurity reduction across all 100 decision trees. Shows which factors drive salary variance the most.
+            </p>
+          </div>
+          <button class="btn-audio-explain" data-explain-key="features">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+            Listen to Feature Importance
+          </button>
+        </div>
+
+        <div class="importance-toggle-bar">
+          <button class="toggle-btn active" id="btnToggleAggregated">Aggregated Factors (Business View)</button>
+          <button class="toggle-btn" id="btnToggleGranular">Granular One-Hot Levels (Technical View)</button>
+        </div>
+
+        <div class="importance-card">
+          <div class="chart-canvas-wrap tall">
+            <canvas id="chartFeatureImportance"></canvas>
+          </div>
+
+          <div class="importance-insights">
+            <strong>Key Business Takeaway for Students:</strong>
+            <p style="margin-top: 0.4rem;">
+              <strong>Years of Experience</strong> is by far the most dominant driver of employee compensation (accounting for >97% of tree split purity). Secondary nuances are introduced by <strong>Job Role</strong> (premium for Data Scientists & Project Managers), <strong>Education Level</strong> (Master's and PhD premiums), and <strong>Company Size</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: HOW RANDOM FOREST REGRESSION WORKS & TREE INSPECTOR -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">Algorithm Architecture</span>
+            <h2 class="section-title">How Random Forest Regression Works</h2>
+            <p class="section-subtitle">
+              Random Forest Regression is an ensemble learning technique that constructs multiple decision trees during training and outputs the average prediction of the individual trees.
+            </p>
+          </div>
+          <button class="btn-audio-explain" data-explain-key="how_it_works">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+            Listen to Algorithm Concept
+          </button>
+        </div>
+
+        <div class="rf-explanation-card">
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem;">The Intuition: Wisdom of the Crowd</h3>
+          <p style="color: var(--text-secondary); line-height: 1.65; max-width: 900px;">
+            A single decision tree is sensitive to noise and prone to overfitting. A <strong>Random Forest</strong> overcomes this limitation by training an entire collection (forest) of 100 decision trees on random bootstrap subsets of data and random subsets of features. When making a salary prediction, each tree casts an independent numerical estimate, and the forest averages them to produce a stable, highly reliable final prediction.
+          </p>
+
+          <!-- Visual Flowchart -->
+          <div class="rf-process-diagram">
+            <div class="rf-step-node">
+              <div class="step-node-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="step-node-title">Employee Details</div>
+              <div class="step-node-desc">Age, Experience, Education, Role, etc.</div>
+            </div>
+
+            <div class="rf-arrow">&rarr;</div>
+
+            <div class="rf-step-node">
+              <div class="step-node-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="step-node-title">Data Preprocessing</div>
+              <div class="step-node-desc">One-Hot Encoding & Scaling</div>
+            </div>
+
+            <div class="rf-arrow">&rarr;</div>
+
+            <div class="rf-step-node trees-node">
+              <div class="step-node-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L7 10h10l-5-8z"></path>
+                  <path d="M12 8L5 18h14l-7-10z"></path>
+                  <line x1="12" y1="18" x2="12" y2="22"></line>
+                </svg>
+              </div>
+              <div class="step-node-title">Multiple Decision Trees</div>
+              <div class="step-node-desc">100 Trees with Bagging</div>
+            </div>
+
+            <div class="rf-arrow">&rarr;</div>
+
+            <div class="rf-step-node">
+              <div class="step-node-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M8 12h8"></path>
+                </svg>
+              </div>
+              <div class="step-node-title">Tree Predictions</div>
+              <div class="step-node-desc">Each Tree Estimates Salary</div>
+            </div>
+
+            <div class="rf-arrow">&rarr;</div>
+
+            <div class="rf-step-node">
+              <div class="step-node-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+              </div>
+              <div class="step-node-title">Ensemble Averaging</div>
+              <div class="step-node-desc">Mean Consensus & Variance</div>
+            </div>
+
+            <div class="rf-arrow">&rarr;</div>
+
+            <div class="rf-step-node final-node">
+              <div class="step-node-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <div class="step-node-title">Final Salary</div>
+              <div class="step-node-desc">Predicted Annual Value</div>
+            </div>
+          </div>
+
+          <!-- Interactive Tree Inspector -->
+          <div class="tree-inspector-box">
+            <div class="tree-inspector-header">
+              <div>
+                <h4 style="font-size: 1.05rem; font-weight: 700;">Interactive Decision Tree Inspector</h4>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">Explore the internal decision split thresholds of sample trees from the trained forest.</p>
+              </div>
+              <div class="tree-select-tabs" id="treeTabs">
+                <button class="tree-tab-btn active" data-tree-idx="0">Tree #1</button>
+                <button class="tree-tab-btn" data-tree-idx="1">Tree #2</button>
+                <button class="tree-tab-btn" data-tree-idx="2">Tree #3</button>
+              </div>
+            </div>
+            
+            <div class="tree-visual-tree" id="treeVisualContainer">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 9: MACHINE LEARNING 7-STEP WORKFLOW -->
+    <section class="section" id="workflow">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">Methodology</span>
+            <h2 class="section-title">Machine Learning Workflow</h2>
+            <p class="section-subtitle">
+              The end-to-end data science lifecycle followed in designing, training, evaluating, and deploying this salary prediction model.
+            </p>
+          </div>
+          <button class="btn-audio-explain" data-explain-key="workflow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+            Listen to Workflow Steps
+          </button>
+        </div>
+
+        <div class="workflow-grid">
+          <!-- Step 1 -->
+          <div class="workflow-card">
+            <span class="workflow-step-badge">Step 1</span>
+            <div class="workflow-title">Load Dataset</div>
+            <div class="workflow-desc">
+              Import 1,000 employee records with demographic, professional, and organizational attributes.
+            </div>
+            <code class="workflow-code">df = pd.read_csv('salary_data.csv')</code>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="workflow-card">
+            <span class="workflow-step-badge">Step 2</span>
+            <div class="workflow-title">Data Preprocessing</div>
+            <div class="workflow-desc">
+              Separate numerical columns and apply OneHotEncoder to categorical features via ColumnTransformer.
+            </div>
+            <code class="workflow-code">OneHotEncoder(handle_unknown='ignore')</code>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="workflow-card">
+            <span class="workflow-step-badge">Step 3</span>
+            <div class="workflow-title">Feature Selection</div>
+            <div class="workflow-desc">
+              Define 9 independent candidate variables (X) and designate continuous salary_lakh as target (y).
+            </div>
+            <code class="workflow-code">X = df[num + cat]; y = df['salary_lakh']</code>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="workflow-card">
+            <span class="workflow-step-badge">Step 4</span>
+            <div class="workflow-title">Train-Test Split</div>
+            <div class="workflow-desc">
+              Partition data into 80% Training (800 rows) and 20% Testing (200 rows) with random_state=42.
+            </div>
+            <code class="workflow-code">train_test_split(test_size=0.20, random_state=42)</code>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="workflow-card">
+            <span class="workflow-step-badge">Step 5</span>
+            <div class="workflow-title">Train Random Forest</div>
+            <div class="workflow-desc">
+              Fit Pipeline containing 100 decision trees on the training partition with bootstrap bagging.
+            </div>
+            <code class="workflow-code">pipeline.fit(X_train, y_train)</code>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="workflow-card">
+            <span class="workflow-step-badge">Step 6</span>
+            <div class="workflow-title">Evaluate Model</div>
+            <div class="workflow-desc">
+              Calculate regression validation metrics: R² (0.9828), MAE (1.73L), MSE (4.77), RMSE (2.18L).
+            </div>
+            <code class="workflow-code">r2_score(y_test, y_pred)</code>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="workflow-card">
+            <span class="workflow-step-badge">Step 7</span>
+            <div class="workflow-title">Predict Salary</div>
+            <div class="workflow-desc">
+              Supply new candidate credentials into the live pipeline to compute expected annual and monthly salary.
+            </div>
+            <code class="workflow-code">pipeline.predict(candidate_df)</code>
+          </div>
+
+          <!-- Step 8: Interpretation -->
+          <div class="workflow-card" style="border-color: var(--accent-secondary);">
+            <span class="workflow-step-badge" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-secondary);">Step 8</span>
+            <div class="workflow-title">Interpret & Explain</div>
+            <div class="workflow-desc">
+              Analyze feature importances, tree consensus confidence intervals, and explainable business insights.
+            </div>
+            <code class="workflow-code">rf.feature_importances_</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: MODEL DETAILS & RETRAINING EXPERIMENTER -->
+    <section class="section" id="model-details">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">Specifications</span>
+            <h2 class="section-title">Model Details & Technical Architecture</h2>
+            <p class="section-subtitle">
+              Exact configuration parameters and interactive hyperparameter testing workbench for classroom demonstration.
+            </p>
+          </div>
+        </div>
+
+        <div class="model-details-grid">
+          <!-- Specifications Card -->
+          <div class="details-spec-card">
+            <h3 style="font-size: 1.25rem; font-weight: 700;">Model Configuration Summary</h3>
+            <div class="spec-list">
+              <div class="spec-item">
+                <span class="spec-key">Algorithm</span>
+                <span class="spec-val">RandomForestRegressor (Scikit-Learn)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-key">Problem Type</span>
+                <span class="spec-val">Continuous Regression</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-key">Target Variable</span>
+                <span class="spec-val">salary_lakh (Lakh INR / Year)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-key">Training Partition</span>
+                <span class="spec-val">80% (800 Records)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-key">Testing Partition</span>
+                <span class="spec-val">20% (200 Records)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-key">Number of Estimators (n_trees)</span>
+                <span class="spec-val" id="specNumTrees">100 Trees</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-key">Random State Seed</span>
+                <span class="spec-val">42 (Strictly Reproducible)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-key">Categorical Encoding</span>
+                <span class="spec-val">One-Hot Encoding via ColumnTransformer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Retraining Experimenter -->
+          <div class="retrain-card">
+            <h3 style="font-size: 1.25rem; font-weight: 700;">Live Hyperparameter Workbench</h3>
+            <p style="font-size: 0.84rem; color: var(--text-secondary); margin-top: 0.35rem;">
+              Demonstrate to the class how modifying the number of trees or the train-test ratio dynamically affects model accuracy.
+            </p>
+
+            <div class="retrain-controls">
+              <div class="form-group">
+                <label class="form-label" for="retrainTrees">
+                  <span>Number of Decision Trees (n_estimators):</span>
+                  <span class="range-val-badge" id="retrainTreesBadge">100 Trees</span>
+                </label>
+                <input type="range" class="range-slider" id="retrainTrees" min="20" max="250" value="100" step="10">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="retrainSplit">
+                  <span>Test Split Ratio (% Hold-out):</span>
+                  <span class="range-val-badge" id="retrainSplitBadge">20% Test</span>
+                </label>
+                <input type="range" class="range-slider" id="retrainSplit" min="10" max="40" value="20" step="5">
+              </div>
+
+              <button class="btn btn-primary" id="btnRetrainModel" style="margin-top: 0.5rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="23 4 23 10 17 10"></polyline>
+                  <polyline points="1 20 1 14 7 14"></polyline>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                </svg>
+                Retrain Model Pipeline Live
+              </button>
+
+              <div id="retrainStatusMessage" style="font-size: 0.82rem; color: var(--accent-secondary); display: none;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: ABOUT PROJECT & TECHNICAL RATIONALE -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">Project Overview</span>
+            <h2 class="section-title">About the Project</h2>
+            <p class="section-subtitle">
+              Comprehensive background, academic purpose, and conceptual justification for classroom viva presentations.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </div>
+            <h4>Project Objective</h4>
+            <p>
+              To develop a machine learning model capable of predicting employee salary based on demographic, educational, professional, and employment-related factors.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h4>Why Regression Technique?</h4>
+            <p>
+              "The target variable, salary, is a continuous numerical value. Therefore, regression techniques are suitable." Unlike classification which predicts discrete categories, regression predicts continuous values along a continuum.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h4>Academic Application</h4>
+            <p>
+              Combines Machine Learning, Exploratory Data Analysis, and Web Development. Provides students and faculty an intuitive platform to inspect real ML pipelines and explain models during viva presentations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PRESENTATION MODE OVERLAY (CLASSROOM SLIDESHOW) -->
+  <div class="presentation-overlay" id="presentationOverlay">
+    <div class="presentation-container">
+      
+      <!-- Top Navigation for Presentation -->
+      <div class="presentation-nav">
+        <div>
+          <span style="font-weight: 700; font-size: 1.1rem; color: var(--accent-primary);">Classroom Presentation Mode</span>
+          <span style="color: var(--text-muted); font-size: 0.85rem; margin-left: 0.5rem;">Salary Prediction Using Random Forest Regression</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <span class="pres-slide-counter" id="presSlideCounter">Slide 1 of 8</span>
+          <button class="btn btn-secondary" id="btnClosePresentation" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;">
+            Exit Presentation (Esc)
+          </button>
+        </div>
+      </div>
+
+      <!-- Slide 1: Introduction & Objective -->
+      <div class="presentation-slide active" data-slide="1">
+        <h2 class="slide-title">Salary Prediction Using Random Forest Regression</h2>
+        <p class="slide-subtitle">Machine Learning Based Employee Compensation Modeling</p>
+        <div class="slide-cards-row">
+          <div class="card">
+            <h4 style="color: var(--accent-primary); margin-bottom: 0.5rem;">Problem Statement</h4>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Predict an employee's fair market salary (in Lakhs per annum) based on 9 demographic, academic, and professional factors.
+            </p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-purple); margin-bottom: 0.5rem;">Chosen Algorithm</h4>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Random Forest Regressor: An ensemble method combining 100 decision trees with bootstrap aggregation to maximize prediction stability.
+            </p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-secondary); margin-bottom: 0.5rem;">Key Achievement</h4>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Achieved <strong>98.28% R² Score</strong> on unseen test data with a low Mean Absolute Error of <strong>₹1.73 Lakh</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Dataset & Features -->
+      <div class="presentation-slide" data-slide="2">
+        <h2 class="slide-title">Primary Dataset & Feature Architecture</h2>
+        <p class="slide-subtitle">1,000 Records × 9 Independent Variables + 1 Target Variable</p>
+        <div class="slide-cards-row">
+          <div class="card">
+            <h4 style="color: var(--accent-primary); margin-bottom: 0.5rem;">Numerical Features (2)</h4>
+            <ul style="padding-left: 1.2rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">
+              <li><strong>Age:</strong> Range 21 to 49 years (mean: 33.7)</li>
+              <li><strong>Experience:</strong> Range 0.0 to 20.0 years (mean: 9.9)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-purple); margin-bottom: 0.5rem;">Categorical Features (7)</h4>
+            <ul style="padding-left: 1.2rem; font-size: 0.86rem; color: var(--text-secondary); line-height: 1.7;">
+              <li><strong>Education:</strong> High School, Diploma, Bachelor's, Master's, PhD</li>
+              <li><strong>Job Role:</strong> 10 Diverse Tech & Business roles</li>
+              <li><strong>Location:</strong> 8 Indian Metros & Tech Hubs</li>
+              <li><strong>Company Size, Industry, Remote, Rating</strong></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-secondary); margin-bottom: 0.5rem;">Continuous Target Variable</h4>
+            <ul style="padding-left: 1.2rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">
+              <li><strong>salary_lakh:</strong> Continuous numerical value</li>
+              <li>Min: ₹5.36 L | Max: ₹65.55 L</li>
+              <li>Mean: ₹29.57 L | Median: ₹25.70 L</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Preprocessing Pipeline -->
+      <div class="presentation-slide" data-slide="3">
+        <h2 class="slide-title">Preprocessing & Pipeline Engineering</h2>
+        <p class="slide-subtitle">Clean, reproducible feature transformations with Scikit-Learn Pipeline</p>
+        <div class="slide-cards-row">
+          <div class="card">
+            <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">ColumnTransformer</h4>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Directly routes numerical features through passthrough and encodes categorical features using <code>OneHotEncoder(handle_unknown='ignore')</code>.
+            </p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-warning); margin-bottom: 0.5rem;">80 / 20 Train-Test Split</h4>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              800 records allocated for training the 100 decision trees; 200 hold-out records reserved strictly for unbiased test evaluation.
+            </p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-secondary); margin-bottom: 0.5rem;">Zero Data Leakage</h4>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Encoders and transformers fit strictly on the training set. New candidate inputs during prediction pass through the identical pipeline.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Random Forest Regression -->
+      <div class="presentation-slide" data-slide="4">
+        <h2 class="slide-title">How Random Forest Regression Works</h2>
+        <p class="slide-subtitle">Ensemble Bagging: Multiple Trees Overcoming Individual Tree Variance</p>
+        <div class="slide-cards-row">
+          <div class="card">
+            <h4 style="color: var(--accent-primary); margin-bottom: 0.5rem;">1. Bootstrap Aggregation</h4>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Each tree is trained on a random bootstrap sample with replacement, exposing every tree to different patterns.
+            </p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-purple); margin-bottom: 0.5rem;">2. Feature Subsetting</h4>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              At each split node, only a random subset of features is evaluated, decorrelating the 100 trees from each other.
+            </p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-secondary); margin-bottom: 0.5rem;">3. Ensemble Averaging</h4>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Final predicted salary is the mathematical mean of all 100 individual tree predictions, cancelling out random errors.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: Model Evaluation -->
+      <div class="presentation-slide" data-slide="5">
+        <h2 class="slide-title">Empirical Model Performance</h2>
+        <p class="slide-subtitle">Verified regression test metrics on 200 hold-out employees</p>
+        <div class="slide-cards-row">
+          <div class="card" style="text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-secondary); font-family: var(--font-mono);">0.9828</div>
+            <div style="font-weight: 700; margin-top: 0.5rem;">R² Score (98.28%)</div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.4rem;">Explains 98.28% of all salary variance.</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-primary); font-family: var(--font-mono);">₹1.73 L</div>
+            <div style="font-weight: 700; margin-top: 0.5rem;">Mean Absolute Error (MAE)</div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.4rem;">Average prediction error is just 1.73 Lakhs.</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-cyan); font-family: var(--font-mono);">₹2.18 L</div>
+            <div style="font-weight: 700; margin-top: 0.5rem;">Root Mean Squared Error (RMSE)</div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.4rem;">Low variance with minimal outlier errors.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6: Actual vs Predicted -->
+      <div class="presentation-slide" data-slide="6">
+        <h2 class="slide-title">Actual vs. Predicted Salary Comparison</h2>
+        <p class="slide-subtitle">Validating prediction accuracy along the 45° perfect prediction line</p>
+        <div class="card" style="padding: 1.5rem;">
+          <p style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            When plotting Actual Salary (X) vs. Predicted Salary (Y) across all 200 test employees, the points adhere tightly along the diagonal reference line, proving the model generalizes effectively without overfitting.
+          </p>
+          <div style="display: flex; justify-content: space-around; background: var(--bg-tertiary); padding: 1rem; border-radius: var(--radius-md);">
+            <div><strong>Benchmark vs Linear:</strong> +2.1% higher R² score</div>
+            <div><strong>Benchmark vs Decision Tree:</strong> +3.8% higher R² score</div>
+            <div><strong>Residual Distribution:</strong> Symmetrical normal bell curve</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 7: Feature Importance -->
+      <div class="presentation-slide" data-slide="7">
+        <h2 class="slide-title">Feature Importance & Business Insights</h2>
+        <p class="slide-subtitle">Understanding which employee factors carry the greatest compensation weight</p>
+        <div class="slide-cards-row">
+          <div class="card">
+            <h4 style="color: var(--accent-primary); margin-bottom: 0.5rem;">1. Years of Experience (97.5%)</h4>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">
+              Dominant predictor of base salary level, showing strong compounding growth across seniority.
+            </p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-purple); margin-bottom: 0.5rem;">2. Job Role Specialization</h4>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">
+              High premiums observed for Data Scientists, Project Managers, and Senior Developers.
+            </p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-secondary); margin-bottom: 0.5rem;">3. Education & Company Scale</h4>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">
+              Master's and PhD degrees command notable premiums; Large firms offer higher baseline pay.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 8: Summary & Conclusion -->
+      <div class="presentation-slide" data-slide="8">
+        <h2 class="slide-title">Conclusion & Classroom Demonstration</h2>
+        <p class="slide-subtitle">Summary of Machine Learning Project Achievements</p>
+        <div class="slide-cards-row">
+          <div class="card">
+            <h4 style="color: var(--accent-secondary); margin-bottom: 0.5rem;">Project Strengths</h4>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">
+              100% genuine ML pipeline with zero fake numbers. Real Scikit-Learn training, dynamic REST API, and responsive modern dashboard.
+            </p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-primary); margin-bottom: 0.5rem;">Next: Live Prediction Demo</h4>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">
+              Exit presentation mode to enter custom employee parameters and observe real-time model inference.
+            </p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Questions & Answers</h4>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">
+              Ready for academic viva discussion on Random Forest Regression, hyperparameters, and preprocessing!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Presentation Footer Controls -->
+      <div class="presentation-footer-controls">
+        <button class="btn btn-secondary" id="btnPresPrev" disabled>
+          &larr; Previous Slide
+        </button>
+        <div style="font-size: 0.82rem; color: var(--text-muted);">
+          Use Arrow Keys (&larr; / &rarr;) or buttons to navigate
+        </div>
+        <button class="btn btn-primary" id="btnPresNext">
+          Next Slide &rarr;
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mandatory Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-text">Random Forest Regression – Salary Prediction | Machine Learning Project</p>
+      <p class="footer-subtext">Developed with Python, Pandas, Scikit-Learn, Flask, and Chart.js &bull; Academic Viva Presentation Ready</p>
+    </div>
+  </footer>
+
+  <!-- Pre-loaded Model Data for Instant Loading & Offline Resiliency -->
+  <script src="static/data/model_data.js"></script>
+
+  <!-- Application Controller Script -->
+  <script src="static/js/app.js"></script>
+</body>
+</html>
