@@ -15,7 +15,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
   <!-- Application Stylesheet -->
-  <link rel="stylesheet" href="static/css/styles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
 
@@ -1417,9 +1417,9 @@
   </footer>
 
   <!-- Pre-loaded Model Data for Instant Loading & Offline Resiliency -->
-  <script src="static/data/model_data.js"></script>
+  <script src="{{ url_for('static', filename='data/model_data.js') }}"></script>
 
   <!-- Application Controller Script -->
-  <script src="static/js/app.js"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 </html>
